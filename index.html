@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情报仪表盘 - 正式版</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans transition-colors duration-300">
+
+    <header class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm sticky top-0 z-20 border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <h1 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white tracking-tight">
+                    情报仪表盘
+                </h1>
+                <div class="flex items-center gap-2">
+                    <!-- Data Source List Feature -->
+                    <div class="relative">
+                        <button id="source-list-toggle" class="p-2 rounded-full text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900" aria-label="显示数据来源" aria-haspopup="true" aria-expanded="false">
+                            <i data-lucide="database" class="h-6 w-6"></i>
+                        </button>
+                        <div id="source-list-panel" class="absolute top-full right-0 mt-2 w-72 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 p-4 hidden">
+                            <h4 class="font-bold text-base mb-3 text-gray-900 dark:text-white">核心数据来源</h4>
+                            <ul id="data-sources" class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                                <!-- Populated by JS -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-full text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900">
+                        <i data-lucide="sun" class="h-6 w-6 block dark:hidden"></i>
+                        <i data-lucide="moon" class="h-6 w-6 hidden dark:block"></i>
+                        <span class="sr-only">切换主题</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-screen-2xl mx-auto p-4 sm:p-6 lg:p-8">
+        <div id="news-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            <section id="china-market" class="flex flex-col gap-6">
+                <h2 class="text-lg font-semibold text-gray-900 dark:text-white sticky top-[65px] bg-gray-50/80 dark:bg-gray-800/80 backdrop-blur-sm py-2 z-10">
+                    🇨🇳 中国市场
+                </h2>
+                <div id="china-market-content" class="flex flex-col gap-6">
+                    <!-- China market news will be injected here -->
+                </div>
+            </section>
+            <section id="global-markets" class="flex flex-col gap-6">
+                 <h2 class="text-lg font-semibold text-gray-900 dark:text-white sticky top-[65px] bg-gray-50/80 dark:bg-gray-800/80 backdrop-blur-sm py-2 z-10">
+                    🌍 全球市场
+                </h2>
+                <div id="global-markets-content" class="flex flex-col gap-6">
+                    <!-- Global markets news will be injected here -->
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <div id="source-tooltip" class="absolute hidden bg-black/80 text-white text-sm px-3 py-1.5 rounded-md shadow-lg z-30 pointer-events-none transition-opacity duration-200">
+        <!-- Tooltip content will be injected here -->
+    </div>
+
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>

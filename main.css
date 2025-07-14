@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles for a clean, professional look */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .dark\\:bg-gray-900\\/80 {
+    background-color: rgba(17, 24, 39, 0.8);
+}
+.dark-mode .dark\\:bg-gray-800 {
+    background-color: #1f2937;
+}
+.dark-mode .dark\\:bg-gray-800\\/80 {
+    background-color: rgba(31, 41, 55, 0.8);
+}
+.dark-mode .dark\\:text-white {
+    color: #ffffff;
+}
+.dark-mode .dark\\:text-gray-100 {
+    color: #f3f4f6;
+}
+.dark-mode .dark\\:text-gray-200 {
+    color: #e5e7eb;
+}
+.dark-mode .dark\\:text-gray-300 {
+    color: #d1d5db;
+}
+.dark-mode .dark\\:text-gray-400 {
+    color: #9ca3af;
+}
+.dark-mode .dark\\:text-gray-500 {
+    color: #6b7280;
+}
+.dark-mode .dark\\:border-gray-700 {
+    border-color: #374151;
+}
+.dark-mode .dark\\:hover\\:bg-gray-700 {
+    background-color: #374151;
+}
+.dark-mode .dark\\:hover\\:bg-gray-700\\/50 {
+    background-color: rgba(55, 65, 81, 0.5);
+}
+.dark-mode .dark\\:focus\\:ring-offset-gray-900 {
+    --tw-ring-offset-color: #111827;
+}
+
+/* News card styles */
+.news-card {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .news-card:hover {
+     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+}
+
+/* Expandable analysis section styles */
+.analysis-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.analysis-content.expanded {
+    max-height: 2000px; /* Large enough to fit any content */
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Custom typography styles for analysis content */
+.analysis-prose {
+    line-height: 1.75;
+}
+
+.analysis-prose h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.dark-mode .analysis-prose {
+    color: #d1d5db;
+}
+
+.dark-mode .analysis-prose h3 {
+    color: #f9fafb;
+}
+
+.dark-mode .analysis-prose strong {
+    color: #f9fafb;
+}
+
+/* Importance Score Badge Styling */
+.importance-badge.high-importance {
+    background-color: #ef4444; /* Tailwind red-500 */
+}
+
+.importance-badge.medium-importance {
+    background-color: #f97316; /* Tailwind orange-500 */
+}
+
+.importance-badge.low-importance {
+    background-color: #22c55e; /* Tailwind green-500 */
+}
+
+/* Data source list floating panel core styles */
+#source-list-panel {
+    z-index: 30; /* 确保在顶层显示 */
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95); /* 初始状态为向上偏移且略微缩小 */
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out; /* 定义平滑过渡效果 */
+    pointer-events: none; /* 隐藏时不可交互 */
+}
+
+/* 面板可见时的状态 */
+#source-list-panel.visible {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* 恢复正常位置和大小 */
+    pointer-events: auto; /* 可见时恢复交互 */
+}
+
+/* 列表项样式 */
+#data-sources li {
+    padding-left: 1.5rem; /* 为项目符号留出空间 */
+    position: relative;
+    list-style: none; /* 移除默认的项目符号 */
+}
+
+/* 自定义列表项的项目符号 */
+#data-sources li::before {
+    content: '•';
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4f46e5; /* 亮色主题下的 Indigo-600 */
+}
+
+/* 暗色模式下的项目符号颜色 */
+.dark-mode #data-sources li::before {
+    color: #818cf8; /* 暗色主题下的 Indigo-400 */
+}
