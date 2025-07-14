@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchNews() {
         try {
-            const response = await fetch('data/news_data.json');
+            const response = await fetch('/intelligence-dashboard/data/news_data.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
