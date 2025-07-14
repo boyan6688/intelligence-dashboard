@@ -4,16 +4,42 @@
     "articles": [
         {
             "source": {
-                "id": null,
-                "name": "9to5google.com"
+                "id": "ign",
+                "name": "IGN"
             },
-            "author": "Ben Schoon",
-            "title": "Galaxy Z Fold 7 is a major leap forward, but Pixel 9 Pro Fold was still the bigger upgrade - 9to5Google",
-            "description": "Samsung's new Galaxy Z Fold 7 is an impressive device, but compared to the Pixel 9 Pro Fold's reinvention, Google brought the bigger upgrade.",
-            "url": "http://9to5google.com/2025/07/13/samsung-galaxy-z-fold-7-pixel-9-pro-fold-refinement-reinvention/",
-            "urlToImage": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2025/07/galaxy-z-fold-7-pixel-9-pro-fold-2.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "author": "Noah Hunter",
+            "title": "Walmart Has the Best Mario Switch Game Deal After Prime Day - IGN",
+            "description": null,
+            "url": "https://www.ign.com/articles/walmart-has-the-best-mario-switch-game-deal-after-prime-day",
+            "urlToImage": "https://assets-prd.ignimgs.com/2025/07/13/mario-prime-day-walmart-deal-1752429526388.png?width=1280&format=jpg&auto=webp&quality=80",
+            "publishedAt": "2025-07-13T18:11:22Z",
+            "content": "While Prime Day may be over, there are still some great deals live at other retailers. Dozens of major video games were on sale this year, especially for Nintendo Switch. If you're on the hunt for a … [+1784 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Eurogamer.net"
+            },
+            "author": null,
+            "title": "Ken Levine's Judas is \"old-school\" - \"You buy the game and you get the whole thing\" - Eurogamer",
+            "description": null,
+            "url": "https://www.eurogamer.net/ken-levines-judas-is-old-school-you-buy-the-game-and-you-get-the-whole-thing",
+            "urlToImage": null,
+            "publishedAt": "2025-07-13T17:43:30Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Anime News Network"
+            },
+            "author": null,
+            "title": "Yakuza 0: Director's Cut Game Review - Anime News Network",
+            "description": "Unfortunately, for all of its improvements and refinements, this Director's Cut cannot truly be called the definitive version of Yakuza 0.",
+            "url": "https://www.animenewsnetwork.com/review/game/switch-2/yakuza-0/director-cut/.226005",
+            "urlToImage": "https://www.animenewsnetwork.com/thumbnails/crop600x315gE2/cms/game-review/226005/yakuza0dc-vertical_cover.jpg.webp",
             "publishedAt": "2025-07-13T16:00:00Z",
-            "content": "Samsung’s Galaxy Z Fold 7 is an impressive jump for the company’s book-style foldable, delivering a needed upgrade and some major improvements. But if we’re looking to crown the biggest upgrade in fo… [+4322 chars]"
+            "content": "Going back to Yakuza 0 after all of these years was a fascinating experience. On the one hand, this is a decade-old entry in a franchise that has since exploded in its popularity and ambitions, all o… [+8159 chars]"
         },
         {
             "source": {
@@ -40,6 +66,19 @@
             "urlToImage": "https://thegamepost.com/wp-content/uploads/2025/07/destiny-2-edge-of-fate-raid-revealed-1.webp",
             "publishedAt": "2025-07-13T14:51:57Z",
             "content": "Bungie has revealed preload details for Destiny 2: Edge of Fate, including when you can start downloading and how much storage space you’ll need across PlayStation, Xbox, and PC.\r\nDestiny 2s next big… [+3421 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BleepingComputer"
+            },
+            "author": "Bill Toulas",
+            "title": "Google Gemini flaw hijacks email summaries for phishing - BleepingComputer",
+            "description": "Google Gemini for Workspace can be exploited to generate email summaries that appear legitimate but include malicious instructions or warnings that direct users to phishing sites without using attachments or direct links.",
+            "url": "https://www.bleepingcomputer.com/news/security/google-gemini-flaw-hijacks-email-summaries-for-phishing/",
+            "urlToImage": "https://www.bleepstatic.com/content/hl-images/2023/10/03/Gmail_headpic.jpg",
+            "publishedAt": "2025-07-13T14:38:00Z",
+            "content": "Google Gemini for Workspace can be exploited to generate email summaries that appear legitimate but include malicious instructions or warnings that direct users to phishing sites without using attach… [+3006 chars]"
         },
         {
             "source": {
@@ -83,54 +122,15 @@
         {
             "source": {
                 "id": null,
-                "name": "MacRumors"
+                "name": "Phoronix"
             },
-            "author": "Joe Rossignol",
-            "title": "Here's Why Apple's All-New Home Hub is Delayed - MacRumors",
-            "description": "Apple's smart home hub will likely launch in 2026, according to Bloomberg's Mark Gurman.  HomePod with a screen (concept) In a report last...",
-            "url": "https://www.macrumors.com/2025/07/13/heres-why-apples-home-hub-is-delayed/",
-            "urlToImage": "https://images.macrumors.com/t/RAqMSxJ_H7zuR1zx_Vwbzlgp7MI=/2000x/article-new/2025/03/HomePod-With-Screen-Feature.jpg",
-            "publishedAt": "2025-07-13T13:40:41Z",
-            "content": "Apple's smart home hub will likely launch in 2026, according to Bloomberg's Mark Gurman.\r\nIn a report last week, Gurman said that Apple originally planned to announce the home hub in March this year,… [+1254 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Video Games Chronicle"
-            },
-            "author": "Andy Robinson",
-            "title": "Donkey Kong Bananza director says he’s aware of occasional performance issues, ‘prioritising fun’ - Video Games Chronicle",
-            "description": "Press noticed occasional frame drops in recent hands-on",
-            "url": "https://www.videogameschronicle.com/news/donkey-kong-bananza-director-says-hes-aware-of-occasional-performance-issues-prioritising-fun/",
-            "urlToImage": "https://www.videogameschronicle.com/files/2025/06/NS2_DonkeyKongBananza_SCRN_10.jpg",
-            "publishedAt": "2025-07-13T13:00:49Z",
-            "content": "Donkey Kong Bananza’s director has said hes aware of occasional performance issues spotted by the press, and said the development team has prioritized fun and playability.\r\nSpeaking to Spanish outlet… [+1834 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Video Games Chronicle"
-            },
-            "author": "Andy Robinson",
-            "title": "EA-backed car culture site winds down, as Need for Speed ‘shelved’ - Video Games Chronicle",
-            "description": "Speedhunters is 'on ice' after nearly two decades; EA recently suggested NFS plans were on hold",
-            "url": "https://www.videogameschronicle.com/news/ea-backed-care-culture-site-winds-down-as-need-for-speed-shelved/",
-            "urlToImage": "https://www.videogameschronicle.com/files/2020/10/Need-for-Speed-Hot-Pursuit-Remastered-c.jpg",
-            "publishedAt": "2025-07-13T12:01:54Z",
-            "content": "EA-backed car culture site, Speedhunters, says its winding down operations after the publisher allegedly decided to shelve its Need for Speed series.\r\nThats according to photojournalist and longtime … [+1544 chars]"
-        },
-        {
-            "source": {
-                "id": "the-verge",
-                "name": "The Verge"
-            },
-            "author": "Jay Peters",
-            "title": "Foldables are in and suddenly really thin - The Verge",
-            "description": "Plus: new Nothing hardware, another take on AI browsers, the return of Tony Hawk’s Pro Skater, and more.",
-            "url": "https://www.theverge.com/installer-newsletter/705979/samsung-galaxy-z-fold-flip-7-nothing-phone-headphone-installer",
-            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/installer.png?quality=90&strip=all&crop=0%2C10.766289650027%2C100%2C78.467420699945&w=1200",
-            "publishedAt": "2025-07-13T12:00:00Z",
-            "content": "Plus, in this weeks Installer: new Nothing hardware, another take on AI browsers, the return of Tony Hawks Pro Skater, and more.\r\nPlus, in this weeks Installer: new Nothing hardware, another take on … [+11811 chars]"
+            "author": null,
+            "title": "Linux 6.16 Ready With Fixes For Old AMD Hardware \"Which Wasn't Even Supposed To Run Linux\" - Phoronix",
+            "description": "Ahead of the Linux 6.16-rc6 kernel release due out later today, an x86/urgent pull request was sent out today that includes some fixes for old AMD Zen 2 hardware.",
+            "url": "https://www.phoronix.com/news/Linux-6.16-rc6-x86-urgent",
+            "urlToImage": "https://www.phoronix.net/image.php?id=2025&image=amd_bc250",
+            "publishedAt": "2025-07-13T13:52:00Z",
+            "content": "Ahead of the Linux 6.16-rc6 kernel release due out later today, an x86/urgent pull request was sent out today that includes some fixes for old AMD Zen 2 hardware.\r\nThere are two principal set of chan… [+2100 chars]"
         }
     ]
 }
