@@ -1,74 +1,54 @@
+import os
+import requests
 import json
-import datetime
 
-# 数据文件路径
+# 定义新闻API的URL和参数 (请根据需要替换为您自己的API)
+# 这里我们使用一个公开的API作为示例
+NEWS_API_ENDPOINT = "https://newsapi.org/v2/top-headlines"
+# 注意：请将 'YOUR_API_KEY' 替换为您从 newsapi.org 获取的真实API密钥
+# 如果您没有API密钥，可以去 newsapi.org 免费注册一个
+# 强烈建议使用 GitHub Secrets 来管理您的 API 密钥
+API_KEY = os.environ.get('NEWS_API_KEY', 'YOUR_FALLBACK_KEY') # 优先从环境变量读取
+PARAMS = {
+    'apiKey': API_KEY,
+    'country': 'us',
+    'category': 'technology',
+    'pageSize': 10
+}
+
+# 定义数据文件的保存路径
 DATA_FILE_PATH = 'data/news_data.json'
 
-def fetch_new_data():
-    """
-    模拟从多个数据源抓取最新情报。
-    在真实场景中，这里会包含使用 requests 和 BeautifulSoup 等库
-    来爬取网页或调用API的代码。
-    """
-    print("正在模拟抓取新数据...")
-    # 模拟抓取到的一条新情报
-    new_article = {
-        "id": f"cn_pmi_{datetime.datetime.utcnow().strftime('%Y%m%d%H%M')}",
-        "category": "国内",
-        "headline": "最新制造业PMI数据公布，显示经济扩张势头",
-        "sourceName": "国家统计局",
-        "sourceUrl": "http://www.stats.gov.cn/",
-        "iso_timestamp": datetime.datetime.utcnow().isoformat() + "Z",
-        "summary": "国家统计局公布的最新数据显示，制造业采购经理指数（PMI）为50.8%，高于荣枯线，表明制造业活动持续扩张。",
-        "importance_score": 82,
-        "analysis": {
-            "logic": "关键宏观经济指标。PMI是经济活动的领先指标，高于50%表示经济扩张，反映出宏观政策支持下生产端保持韧性。",
-            "path": "PMI数据向好 → 提振市场对经济基本面的信心 → 改善企业盈利预期 → 推动风险资产价格上涨。",
-            "reaction": {
-                "a_share": "利好。提振整体市场情绪，顺周期板块（如材料、工业）尤其受益。",
-                "hk_stock": "利好。与A股联动，增强海外投资者信心。",
-                "us_stock": "无关系",
-                "us_bond": "无关系",
-                "gold": "无关系",
-                "sectors": "原材料、工业、制造业、大宗商品。"
-            }
-        }
-    }
-    print("新数据抓取完成。")
-    return [new_article]
+# --- 核心修复代码 --- #
+# 获取文件路径的目录部分
+directory = os.path.dirname(DATA_FILE_PATH)
+# 检查目录是否存在，如果不存在，则创建它 (exist_ok=True 确保目录已存在时不会报错)
+if directory: # 确保目录名不为空
+    os.makedirs(directory, exist_ok=True)
+    print(f"确保目录 '{directory}' 已存在。")
+# -------------------- #
 
-def run_update_process():
-    """
-    执行完整的数据更新流程。
-    """
-    print("开始数据更新流程...")
-    # 1. 读取现有数据
-    try:
-        with open(DATA_FILE_PATH, 'r', encoding='utf-8') as f:
-            existing_data = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        existing_data = []
-    
-    # 2. 抓取新数据
-    new_articles = fetch_new_data()
-    
-    # 3. 合并数据（将新数据置于顶部）并去重
-    updated_data = new_articles + existing_data
-    final_data = []
-    seen_ids = set()
-    for article in updated_data:
-        if article['id'] not in seen_ids:
-            final_data.append(article)
-            seen_ids.add(article['id'])
+# 发起API请求获取新闻数据
+try:
+    if not API_KEY or API_KEY == 'YOUR_FALLBACK_KEY':
+        raise ValueError("API密钥未设置。请在 GitHub Secrets 中设置 NEWS_API_KEY。")
 
-    # 4. 保留最近的N条记录（例如100条）
-    final_data = final_data[:100]
+    print("正在从API获取最新新闻数据...")
+    response = requests.get(NEWS_API_ENDPOINT, params=PARAMS)
+    response.raise_for_status()  # 如果请求失败 (状态码非2xx), 则抛出异常
+    news_data = response.json()
+    print("成功获取数据。")
 
-    # 5. 写回JSON文件
+    # 将获取的数据以JSON格式写入文件
     with open(DATA_FILE_PATH, 'w', encoding='utf-8') as f:
-        json.dump(final_data, f, ensure_ascii=False, indent=2)
-    
-    print(f"数据更新成功！'{DATA_FILE_PATH}' 已被更新，现有 {len(final_data)} 条记录。")
+        json.dump(news_data, f, ensure_ascii=False, indent=4)
+    print(f"最新新闻数据已成功保存至 '{DATA_FILE_PATH}'")
 
-if __name__ == "__main__":
-    run_update_process()
+except requests.exceptions.RequestException as e:
+    print(f"API请求失败: {e}")
+except ValueError as e:
+    print(f"配置错误: {e}")
+except Exception as e:
+    print(f"处理数据时发生错误: {e}")
+    # 抛出非零退出码，以便GitHub Actions识别为失败
+    exit(1)
