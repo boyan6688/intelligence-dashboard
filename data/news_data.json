@@ -4,120 +4,133 @@
     "articles": [
         {
             "source": {
-                "id": "the-washington-post",
-                "name": "The Washington Post"
+                "id": null,
+                "name": "Kotaku"
             },
-            "author": "Kathryn O'Shea-Evans",
-            "title": "Need a room refresh? Try one of these dynamic trim colors. - The Washington Post",
-            "description": "Designers share nine paint colors that will take your trim from bit player to starring role.",
-            "url": "https://www.washingtonpost.com/home/2025/07/14/best-trim-paint-colors/",
-            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/ULZHIEKJIVH7Y4N2OLRWW7VM5Q.jpeg&w=1440",
-            "publishedAt": "2025-07-14T13:36:43Z",
-            "content": "If the walls of a room are an outfit, think of the trim (also known as woodwork, window casings and the like) as a statement accessory. With that in mind, many designers are turning to rich tones tha… [+6200 chars]"
-        },
-        {
-            "source": {
-                "id": "ign",
-                "name": "IGN"
-            },
-            "author": "Vikki Blake",
-            "title": "Tony Hawk Pro Skater 3 + 4 Developer Says It's Pulling an Odd Reference to Guitar Hero, and 'Investigating' How It Got in the Game - IGN",
-            "description": "Tony Hawk's Pro Skater 3 + 4 developer Iron Galaxy says it is \"investigating\" a curious \"Easter egg\" that some fans believe references an Activision series resigned to the trash.",
-            "url": "https://www.ign.com/articles/tony-hawk-pro-skater-3-4-developer-says-its-pulling-an-odd-reference-to-guitar-hero-and-investigating-how-it-got-in-the-game",
-            "urlToImage": "https://assets-prd.ignimgs.com/2025/04/14/tonyhawkproskater3and4rayssalealbts-ign-blogroll-1744653424528.jpg?width=1280&format=jpg&auto=webp&quality=80",
-            "publishedAt": "2025-07-14T13:25:26Z",
-            "content": "Tony Hawk's Pro Skater 3 + 4\r\n developer Iron Galaxy says it is \"investigating\" a curious \"Easter egg\" that some fans believe references an Activision series resigned to the trash. Literally\r\n.\r\nShor… [+2306 chars]"
+            "author": "Ethan Gach",
+            "title": "The Impossible-To-Find 30th Anniversary PS5 Controller Is Coming Back For A Limited Time - Kotaku",
+            "description": "PS Plus members will get first dibs on Sony's most popular DualSense",
+            "url": "https://kotaku.com/ps1-30th-anniversary-ps5-dualsense-stock-pre-order-1851786249",
+            "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/db656dc46133ca00be19f7ba071a7322.png",
+            "publishedAt": "2025-07-14T17:55:00Z",
+            "content": "Sony celebrated the 30th anniversary of PlayStation with PS1-style special edition consoles and accessories that looked great and almost nobody could get. Everything sold out almost immediately, leav… [+1634 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "The Cut"
-            },
-            "author": "Elizabeth Gulino",
-            "title": "7 Real Stories of Group Trips From Hell - The Cut",
-            "description": "Group trips test your friendships, your patience, and your sanity. Here, seven people tell us the good, the bad, and the really ugly stories from their big trips. Don’t say we didn’t warn you!",
-            "url": "http://www.thecut.com/article/group-girls-trips-real-horror-stories.html",
-            "urlToImage": "https://pyxis.nymag.com/v1/imgs/114/783/2c501deb7a30a3fcf8e1d6b30e384b06f8-square-group-trips-hell.1x.rsocial.w1200.jpg",
-            "publishedAt": "2025-07-14T13:00:03Z",
-            "content": "There are endless opportunities for a group trip to go off the rails, and, unfortunately, it can happen quite often thanks to the chaos and personality clashes that come with traveling in numbers. Gr… [+14010 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Blizzard.com"
+                "name": "Thegamepost.com"
             },
             "author": null,
-            "title": "Dash Triumphant in the Elite Elder Rift Race — Diablo Immortal - Blizzard News",
-            "description": "Gather your quickest allies in the Elite Elder Rift Race for incredible rewards.",
-            "url": "https://news.blizzard.com/en-us/article/24224178/dash-triumphant-in-the-elite-elder-rift-race",
-            "urlToImage": "https://bnetcmsus-a.akamaihd.net/cms/blog_header/0t/0TQCBM4AADMI1752276792167.jpg",
-            "publishedAt": "2025-07-14T13:00:00Z",
-            "content": "Demons blur in your vision as you fly past them, conquering the challenge as swift as the wind. Since our last content update, youve become natures ultimate defender with the new Druid class, and sla… [+8464 chars]"
+            "title": "Destiny 2 Edge of Fate Soundtrack: Full Tracklist Revealed Ahead of Official Launch - The Game Post",
+            "description": "The full Destiny 2: Edge of Fate soundtrack has been revealed early, showcasing all 19 tracks and their composers just hours before launch.",
+            "url": "https://thegamepost.com/destiny-2-edge-of-fate-soundtrack-revealed/",
+            "urlToImage": "https://thegamepost.com/wp-content/uploads/2025/07/destiny-2-edge-of-fate-soundtrack-revealed-2.webp",
+            "publishedAt": "2025-07-14T17:32:23Z",
+            "content": "The full Destiny 2: Edge of Fate soundtrack has been revealed early, showcasing all 19 tracks and their composers just hours before launch.\r\nWere officially less than 24 hours away from the launch of… [+3279 chars]"
         },
         {
             "source": {
                 "id": "techcrunch",
                 "name": "TechCrunch"
             },
-            "author": "Lauren Forristal",
-            "title": "Discord’s virtual reward, ‘Orbs,’ launches out of beta - TechCrunch",
-            "description": "According to Discord, Orbs have been popular among testers, with millions earned and spent during the seven-week beta period.",
-            "url": "https://techcrunch.com/2025/07/14/discords-virtual-reward-orbs-launches-out-of-beta/",
-            "urlToImage": "https://techcrunch.com/wp-content/uploads/2025/07/Discord-Orbs-Overview.png?w=1190",
-            "publishedAt": "2025-07-14T13:00:00Z",
-            "content": "After announcing in late May that the platform would be experimenting with a new virtual reward system, Discord is now launching it to the public. The aim of the rewards, called Orbs, is to get peopl… [+1198 chars]"
+            "author": "Sarah Perez",
+            "title": "NotebookLM adds featured notebooks from The Economist, The Atlantic and others - TechCrunch",
+            "description": "Google is adding notebooks from  various authors, publications, researchers, and nonprofits to its popular AI-powered research and note-taking assistant NotebookLM.",
+            "url": "https://techcrunch.com/2025/07/14/notebooklm-adds-featured-notebooks-from-the-economist-the-atlantic-and-others/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2025/07/Featured_Notebook_Header_2096x11.width-2200.format-webp.webp?resize=1200,677",
+            "publishedAt": "2025-07-14T17:26:38Z",
+            "content": "Google is transforming its popular AI-powered research and note-taking assistant, NotebookLM, into more of a destination. The company announced Monday it would add a series of featured notebooks from… [+1349 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Gizmodo.com"
+            },
+            "author": "James Whitbrook",
+            "title": "‘Warhammer 40K’ Fans Are Screaming About an Iconic Scream - Gizmodo",
+            "description": "'Dawn of War Definitive Edition' developers have screamed in response about the backlash to the lack of a famous shout from the 2004 game's new trailer.",
+            "url": "https://gizmodo.com/warhammer-40k-dawn-of-war-definitive-edition-scream-backlash-relic-2000628930",
+            "urlToImage": "https://gizmodo.com/app/uploads/2025/07/warhammer-40k-dawn-of-war-definitive-edition-sergeant-scream-1200x675.jpg",
+            "publishedAt": "2025-07-14T17:00:56Z",
+            "content": "In the grim dark future of the 41st millennium, there is only warand that kind of attitude invites a lot of yelling. Angry human yells, angry alien yells, angry daemonic yells, someone, somewhere is … [+4022 chars]"
         },
         {
             "source": {
                 "id": "the-verge",
                 "name": "The Verge"
             },
-            "author": "Tom Warren",
-            "title": "Microsoft will halt new Office features for Windows 10 in 2026 - The Verge",
-            "description": "Microsoft is cutting off new Office app features for Windows 10 users in 2026. Businesses and consumers will have to upgrade to Windows 11 instead.",
-            "url": "https://www.theverge.com/news/706586/microsoft-365-office-app-features-windows-10-end-of-life-2026",
-            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STKB334_MICROSOFT_OFFICE_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-            "publishedAt": "2025-07-14T12:37:39Z",
-            "content": "Youll have to upgrade to Windows 11 if you want the latest Microsoft 365 app improvements.\r\nMicrosoft has quietly revealed that it will stop adding new features to Office apps (Microsoft 365) for Win… [+1398 chars]"
+            "author": "Jess Weatherbed",
+            "title": "Anthropic’s Claude chatbot can now make and edit your Canva designs - The Verge",
+            "description": "Canva users can now create, edit, and manage their designs by describing their requirements to Anthropic’s Claude AI.",
+            "url": "https://www.theverge.com/news/706637/canva-anthropic-claude-ai-mcp-support",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/STK263_CANVA_D.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "publishedAt": "2025-07-14T17:00:00Z",
+            "content": "The new integration allows Claude users to create, resize, and summarize Canva content using text prompts.\r\nThe new integration allows Claude users to create, resize, and summarize Canva content usin… [+2146 chars]"
+        },
+        {
+            "source": {
+                "id": "ign",
+                "name": "IGN"
+            },
+            "author": "Rebekah Valentine",
+            "title": "Nintendo Rolls Out New eShop Publishing Guidelines for Switch 2 in Asia, Seemingly to Curb Spam Games - IGN",
+            "description": "Nintendo has quietly made some subtle changes to its guidelines for developers publishing games on its Nintendo Switch 2 eShop, seemingly in an effort to slow an oft-criticized flood of low-effort “slop” content that's been crowding out other games and frustr…",
+            "url": "https://www.ign.com/articles/nintendo-rolls-out-new-eshop-publishing-guidelines-for-switch-2-in-asia-seemingly-to-curb-spam-games",
+            "urlToImage": "https://assets-prd.ignimgs.com/2025/07/14/eshopguidelines-blogroll-1752504606560.jpg?width=1280&format=jpg&auto=webp&quality=80",
+            "publishedAt": "2025-07-14T16:11:06Z",
+            "content": "Nintendo has quietly made some subtle changes to its guidelines for developers publishing games on its Nintendo Switch 2 eShop, seemingly in an effort to slow an oft-criticized flood of low-effort sl… [+10922 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Jordan Valinsky",
+            "title": "Sony is giving NFL’s coaches headsets a major makeover - CNN",
+            "description": "Between the extreme weather and fans’ near-constant screams, coaching an NFL game is already a challenge. So, the league has tapped Sony to create custom-built headsets that will ideally operate better in those conditions.",
+            "url": "https://www.cnn.com/2025/07/14/tech/nfl-sony-new-coach-headset",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/20250509-062941012-ios.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2025-07-14T16:00:00Z",
+            "content": "Between extreme weather and noisy stadiums, coaching a football game can be difficult. So, the NFL and Sony are listening to coaches to design new, custom-built headsets that can function best under … [+2866 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Andrew Liszewski",
+            "title": "Pebblebee’s AirTag alternative now doubles as a panic alarm - The Verge",
+            "description": "A free software update for Pebbelebee’s app turns its Clip tracker into a panic alarm with a siren, flashing light, and emergency notifications.",
+            "url": "https://www.theverge.com/news/706631/pebblebee-clip-tracker-android-ios-alert-safety-panic-alarm",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/pebblebee1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "publishedAt": "2025-07-14T16:00:00Z",
+            "content": "The Clip trackers new safety feature sounds an alarm and alerts friends or family in an emergency.\r\nPebblebee has announced a new personal safety feature for its Clip location tracker thats compatibl… [+2318 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Brandt Ranj",
+            "title": "Every Best Buy store will have Nintendo Switch 2 consoles on July 17th - The Verge",
+            "description": "Best Buy will have Nintendo Switch 2 consoles at every store on July 17th to coincide with the launch of Donkey Kong Bananza.",
+            "url": "https://www.theverge.com/tech/706677/nintendo-switch-2-restock-best-buy-in-store",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/257769_Switch_2_AKrales_0395_588c1a.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+            "publishedAt": "2025-07-14T15:51:32Z",
+            "content": "Coinciding with the launch of Donkey Kong Bananza, Nintendos going bananas with this restock.\r\nCoinciding with the launch of Donkey Kong Bananza, Nintendos going bananas with this restock.\r\nIts been … [+961 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Android Authority"
+                "name": "Kotaku"
             },
-            "author": null,
-            "title": "First look at Gemini Space: Google's Now Bar-like upgrade to Pixel's At a Glance (APK teardown) - Android Authority",
-            "description": "Here's your first look at Google's Gemini Space, an intelligent upgrade to Pixel's At a Glance experience, bringing dynamic contextual cards.",
-            "url": "https://www.androidauthority.com/google-pixel-gemini-space-first-look-apk-teardown-3577101/",
-            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2025/07/Google-Gemini-Space-on-a-Pixel-9-running-Android-Canary-Sports-Score-on-lock-screen-scaled.jpg",
-            "publishedAt": "2025-07-14T12:36:17Z",
-            "content": "<ul><li>Gemini Space is an upcoming upgrade to the Pixels At a Glance experience.</li><li>Its seemingly inspired by Samsungs Now bar and Now Brief, which show contextual cards on the lock screen and … [+1892 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "The Daily Galaxy --Great Discoveries Channel"
-            },
-            "author": null,
-            "title": "Say This Simple Phrase to ChatGPT and It Will Never Forget You! - The Daily Galaxy",
-            "description": "ChatGPT just got a major upgrade. With its new memory feature, it can remember key details from past conversations, making your interactions feel more personal and tailored.",
-            "url": "https://dailygalaxy.com/2025/07/say-this-simple-phrase-to-chatgpt-and-it-will-never-forget-you/",
-            "urlToImage": "https://dailygalaxy.com/wp-content/uploads/2025/07/Futuristic-AI-business-scene-with-ultra-modern-ambiance.jpg",
-            "publishedAt": "2025-07-14T12:30:00Z",
-            "content": "OpenAI has introduced a major update to ChatGPT, bringing a feature that significantly changes the way users interact with the AI. The latest version of ChatGPT now includes along-term memory functio… [+3152 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Nintendo Life"
-            },
-            "author": "Ollie Reynolds",
-            "title": "Nintendo Is Seeking Player Feedback On Game-Key Cards In Japan - Nintendo Life",
-            "description": "How much time have you got?",
-            "url": "https://www.nintendolife.com/news/2025/07/nintendo-is-seeking-player-feedback-on-game-key-cards-in-japan",
-            "urlToImage": "https://images.nintendolife.com/cecbe85d71493/large.jpg",
-            "publishedAt": "2025-07-14T12:15:00Z",
-            "content": "Image: Nintendo Life\r\nGame-Key Cards, it's safe to say, haven't gone down too well with the Nintendo community.\r\nWith rumours heavily indicating that the only Switch 2 cartridge currently on offer to… [+3190 chars]"
+            "author": "Ethan Gach",
+            "title": "Switch 2 Players Are Begging For A Nintendo Direct And One Is Reportedly Coming Before The End Of July - Kotaku",
+            "description": "Nintendo is seemingly saving its showcase until after Donkey Kong Bananza is out",
+            "url": "https://kotaku.com/switch-2-nintendo-direct-july-mario-red-dead-2-1851786219",
+            "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/8636df6136395093b3c45045d682459f.jpg",
+            "publishedAt": "2025-07-14T15:50:00Z",
+            "content": "The Switch 2 has been out for over a month. Hype levels are starting to run dangerously low. While Donkey Kong Bananza is shaping up to be a big shot in the consoles launch window arm later this week… [+3368 chars]"
         }
     ]
 }
