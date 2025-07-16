@@ -1,136 +1,123 @@
 {
     "status": "ok",
-    "totalResults": 63,
+    "totalResults": 69,
     "articles": [
         {
             "source": {
                 "id": null,
                 "name": "Push Square"
             },
-            "author": "Liam Croft",
-            "title": "These 13 PS5, PS4 Games Leave PS Plus Extra in August - Push Square",
-            "description": "The Witcher 3, Jedi: Survivor both depart",
-            "url": "https://www.pushsquare.com/news/2025/07/these-13-ps5-ps4-games-leave-ps-plus-extra-in-august",
-            "urlToImage": "https://images.pushsquare.com/93dda4c28c6a1/large.jpg",
-            "publishedAt": "2025-07-15T11:00:11Z",
-            "content": "Your new batch of PS Plus Extra and PS Plus Premium games for July 2025 are available to download now, but today's monthly rotation has also confirmed the PS5, PS4 titles that will be leaving the ser… [+641 chars]"
-        },
-        {
-            "source": {
-                "id": "the-wall-street-journal",
-                "name": "The Wall Street Journal"
-            },
-            "author": "The Wall Street Journal",
-            "title": "Exclusive | The Secret to Better Airplane Navigation Could Be Inside the Earth’s Crust - The Wall Street Journal",
-            "description": null,
-            "url": "https://www.wsj.com/articles/the-secret-to-better-airplane-navigation-could-be-inside-the-earths-crust-6f2c34f4",
-            "urlToImage": null,
-            "publishedAt": "2025-07-15T11:00:00Z",
-            "content": null
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Nintendo Life"
-            },
-            "author": "Ollie Reynolds",
-            "title": "Nintendo Has Seemingly Taken Further Steps To Combat 'eSlop' On Switch 2 - Nintendo Life",
-            "description": "Though how successful it will be remains to be seen",
-            "url": "https://www.nintendolife.com/news/2025/07/nintendo-has-seemingly-taken-further-steps-to-combat-eslop-on-switch-2",
-            "urlToImage": "https://images.nintendolife.com/95f062d6a1ddf/large.jpg",
-            "publishedAt": "2025-07-15T10:52:30Z",
-            "content": "Fair changes but also questionable.\r\nFor garbage Indies or shovelware sure. Even the long title obvious ones.\r\nSome odd Indies are decent of course.\r\nThe fake Hentai games aren't even that its just t… [+1630 chars]"
+            "author": "Robert Ramsey",
+            "title": "Cyberpunk 2077 Patch 2.3 Showcase Announced for Tomorrow - Push Square",
+            "description": "Preem",
+            "url": "https://www.pushsquare.com/news/2025/07/cyberpunk-2077-patch-2-3-showcase-announced-for-tomorrow",
+            "urlToImage": "https://images.pushsquare.com/cf3491f869236/large.jpg",
+            "publishedAt": "2025-07-15T15:45:00Z",
+            "content": "CD Projekt Red will showcase Patch 2.3 for Cyberpunk 2077 tomorrow (the 16th July), via a dedicated livestream. It starts at 4pm BST / 5pm CEST.\r\nFans of the RPG have been waiting for this one. Patch… [+1304 chars]"
         },
         {
             "source": {
                 "id": null,
                 "name": "Eurogamer.net"
             },
-            "author": "Connor Makar",
-            "title": "The excellent John Wick Hex will be delisted later this week, currently on sale - Eurogamer",
-            "description": "John Wick Hex, a wonderful tactical RPG, is being delisted off digital storefronts on the 17th July.",
-            "url": "https://www.eurogamer.net/the-excellent-john-wick-hex-will-be-delisted-later-this-week-currently-on-sale",
-            "urlToImage": "https://assetsio.gnwcdn.com/john-wick-hex-gets-an-october-release-date-1568899189530.jpg?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
-            "publishedAt": "2025-07-15T09:12:21Z",
-            "content": "John Wick Hex, a wonderful tactical RPG, is being delisted off digital storefronts on the 17th July.\r\nDeveloped by Bithell Games and released back in 2019, it will still be playable by those who alre… [+1537 chars]"
+            "author": "Ed Nightingale",
+            "title": "Candy Crush developer King reportedly replacing laid off staff with AI tools they helped to build - Eurogamer",
+            "description": "Candy Crush developer King is reportedly replacing laid off staff with AI tools they helped to build.",
+            "url": "https://www.eurogamer.net/candy-crush-developer-king-reportedly-replacing-laid-off-staff-with-ai-tools-they-helped-to-build",
+            "urlToImage": "https://assetsio.gnwcdn.com/candy-crush-saga-logo.png?width=1200&height=630&fit=crop&enable=upscale&auto=webp",
+            "publishedAt": "2025-07-15T15:08:20Z",
+            "content": "Candy Crush developer King is reportedly replacing laid off staff with AI tools they helped to build.\r\nAt the start of the month, Microsoft announced around 9000 employees would be laid off. This inc… [+2516 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Andrew Liszewski",
+            "title": "The Pro 3 is 8BitDo’s first controller with swappable buttons - The Verge",
+            "description": "8BitDo has updated its Sony-style Pro 3 controller with TMR joysticks, Hall effect switchable triggers, and magnetic buttons you can rearrange.",
+            "url": "https://www.theverge.com/news/706967/8bitdo-pro-3-wireless-bluetooth-controller-tmr-swappable-buttons",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/8bitdopro3_1.jpg?quality=90&strip=all&crop=0%2C10.76363770124%2C100%2C78.472724597521&w=1200",
+            "publishedAt": "2025-07-15T15:00:00Z",
+            "content": "You can rearrange the Pro 3s magnetic buttons between Xbox and Switch layouts.\r\nYou can rearrange the Pro 3s magnetic buttons between Xbox and Switch layouts.\r\n8BitDo has released a new version of it… [+2382 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Video Games Chronicle"
+                "name": "GameSpot"
             },
-            "author": "Jordan Middler",
-            "title": "Tony Hawk’s Pro Skater 3 + 4 dev says it’s removing a cheeky Guitar Hero reference and ‘investigating’ how it happened - Video Games Chronicle",
-            "description": "Fans have pushed back at Iron Galaxy, calling it \"just a silly gag\"",
-            "url": "https://www.videogameschronicle.com/news/tony-hawks-pro-skater-3-4-dev-says-its-removing-a-cheeky-guitar-hero-reference-and-investigating-how-it-happened/",
-            "urlToImage": "https://www.videogameschronicle.com/files/2025/07/Banjo-Champion.jpg",
-            "publishedAt": "2025-07-15T08:56:48Z",
-            "content": "Tony Hawk’s Pro Skater 3 + 4 developer Iron Galaxy has said it’s “investigating” how a reference to Guitar Hero, and previous Tony Hawk’s Pro Skater developer NeverSoft, made it into the new pair of … [+1928 chars]"
+            "author": "Phil Owen",
+            "title": "Fortnite Is Down, And Might Stay That Way For A While - GameSpot",
+            "description": "Epic made a mistake deploying the new update, and the Fortnite servers remain offline.",
+            "url": "https://www.gamespot.com/articles/fortnite-is-down-and-might-stay-that-way-for-a-while/1100-6533166/",
+            "urlToImage": "https://www.gamespot.com/a/uploads/screen_kubrick/1757/17577455/4532478-fortnitedown.jpg",
+            "publishedAt": "2025-07-15T14:45:10Z",
+            "content": "UPDATE: Fortnite is back online as of 9:18 AM PT, so the delay wasn't so bad after all.\r\nSomething has gone awry during Fortnite's new update, and the the mega-popular online shooter/metaverse is dow… [+1246 chars]"
+        },
+        {
+            "source": {
+                "id": "polygon",
+                "name": "Polygon"
+            },
+            "author": "Marc Griffin",
+            "title": "3 of summer’s biggest games are headed to Game Pass in July - Polygon",
+            "description": "Wuchang: Fallen Feathers, Grounded 2, and Abiotic Factor headline the newest addition of games to Xbox Game Pass.",
+            "url": "https://www.polygon.com/xbox/613096/game-pass-july-2025-wuchang-grounded-2-abiotic-factor",
+            "urlToImage": "https://platform.polygon.com/wp-content/uploads/sites/2/2025/07/wuchang-fallen-feathers-pr-game-press.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+            "publishedAt": "2025-07-15T14:25:00Z",
+            "content": "Xbox is back with more new and returning titles to Game Pass for July, headlined by the hotly anticipated Wuchang: Fallen Feathers, Abiotic Factor, and Grounded 2.\r\nWuchang: Fallen Feathers is set to… [+1455 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Push Square"
+                "name": "9to5Mac"
             },
-            "author": "Liam Croft",
-            "title": "July 2025's PS Plus Extra, Premium Games Available to Download Now - Push Square",
-            "description": "Hot selection for a hot month",
-            "url": "https://www.pushsquare.com/news/2025/07/july-2025s-ps-plus-extra-premium-games-available-to-download-now",
-            "urlToImage": "https://images.pushsquare.com/c94fb8993968b/large.jpg",
-            "publishedAt": "2025-07-15T08:00:00Z",
-            "content": "PS Plus Extra and PS Plus Premium appear to be matching the current season with a scorching lineup of PS5, PS4, and Classic games for July 2025, all of which are available to download now. The UK and… [+954 chars]"
-        },
-        {
-            "source": {
-                "id": "ign",
-                "name": "IGN"
-            },
-            "author": "Robert Anderson",
-            "title": "Apple's AirPods Pro 2 $100 Discount Lives On Like It’s Still Prime Day, But It Won't Last Forever - IGN",
-            "description": "I can't believe you can still pick up Apple's AirPods Pro 2 at $100 off right now, a record low price for the best in-class noise-cancelling earbuds.",
-            "url": "https://www.ign.com/articles/apple-airpods-pro-2-lowest-price-ever-today-2025",
-            "urlToImage": "https://assets-prd.ignimgs.com/2025/07/14/apple-airpods-pro-2-on-sale-amazon-prime-day-black-friday-ign-2025-1752486414794.png?width=1280&format=jpg&auto=webp&quality=80",
-            "publishedAt": "2025-07-15T06:07:15Z",
-            "content": "Amazon's record-long Prime Day sale is finally over (phew), but one of its best deals refuses to die. Apple's AirPods Pro 2 are still down to $149, a full $100 off the list price, and $20 cheaper tha… [+1930 chars]"
+            "author": "Ryan Christoffel",
+            "title": "iPhone 17: Titanium is coming to just one model, and it’s a surprising choice - 9to5Mac",
+            "description": "The iPhone 17 line will feature notable design changes, including a shift to having only one model use titanium—and it’s a surprising choice.",
+            "url": "https://9to5mac.com/2025/07/15/iphone-17-titanium-is-coming-to-just-one-model-and-its-a-surprising-choice/",
+            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2023/09/Titanium-iPhone-15-Pro.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-07-15T14:20:00Z",
+            "content": "Two years ago, Apple launched the iPhone 15 Pro and Pro Max with a big emphasis on a new, titanium design. Titanium remained a differentiator for iPhone 16 Pro, too. But reporting indicates the compa… [+1760 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Nintendo Life"
+                "name": "MacRumors"
             },
-            "author": "Liam Doolan",
-            "title": "Square Enix Rules Out Switch 2 \"Upgrade Path\" For Dragon Quest I & II HD-2D Remake - Nintendo Life",
-            "description": "The Switch version \"cannot be upgraded\"",
-            "url": "https://www.nintendolife.com/news/2025/07/square-enix-rules-out-switch-2-upgrade-path-for-dragon-quest-i-and-ii-hd-2d-remake",
-            "urlToImage": "https://images.nintendolife.com/9239ac99842c6/large.jpg",
-            "publishedAt": "2025-07-15T05:45:00Z",
-            "content": "Image: Square Enix\r\nSquare Enix's Dragon Quest I &amp; II HD-2D Remake is due out on the Switch and Switch 2 this October, and ahead of release, an official FAQ has shared an important detail.\r\nIt's … [+1105 chars]"
+            "author": "Joe Rossignol",
+            "title": "Foldable iPhone Said to Feature 'Crease-Free' Display — Here's How - MacRumors",
+            "description": "Samsung Display will supply Apple with \"crease-free\" displays for its long-rumored foldable iPhone, according to Apple supply chain analyst...",
+            "url": "https://www.macrumors.com/2025/07/15/foldable-iphone-crease-free-samsung-display/",
+            "urlToImage": "https://images.macrumors.com/t/7O_4ilWjMpNSXf1pIBM37P_dKgU=/2500x/article-new/2025/03/Foldable-iPhone-2023-Feature-Homescreen.jpg",
+            "publishedAt": "2025-07-15T14:00:52Z",
+            "content": "Samsung Display will supply Apple with \"crease-free\" displays for its long-rumored foldable iPhone, according to Apple supply chain analyst Ming-Chi Kuo.\r\nTo achieve a crease-free inner display, Kuo … [+1690 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "SamMobile"
+                "name": "Android Authority"
             },
-            "author": "Adnan Farooqui",
-            "title": "S Pen may return to Galaxy Z Fold phones with new Samsung tech - SamMobile",
-            "description": "Samsung’s beta version of Android 16-based One UI 8.0 leaked in April 2025. Since then, we have been testing it on our Galaxy S25 to find new features. Over the last few months, the brand has released a few new beta versions of the software, and we have repor…",
-            "url": "https://www.sammobile.com/news/complete-samsung-one-ui-8-guide-galaxy/",
-            "urlToImage": "https://www.sammobile.com/wp-content/uploads/2025/07/Samsung-Galaxy-Z-Flip-7-7-1200x675.jpg",
-            "publishedAt": "2025-07-15T03:23:00Z",
-            "content": "There was an expectation that this year's foldable lineup from Samsung could see a significant price increase, not just due to the innovations they'd bring, but also due to rising trade tensions brou… [+1365 chars]"
+            "author": null,
+            "title": "Pixel 10 series FCC filing confirms connectivity features, hints at Samsung modem - Android Authority",
+            "description": "The Google Pixel 10 phones have appeared in a regulatory filing, confirming connectivity. Here's what the base Pixel 10 is lacking.",
+            "url": "https://www.androidauthority.com/pixel-10-series-fcc-filing-3577549/",
+            "urlToImage": "https://www.androidauthority.com/wp-content/uploads/2025/03/google-pixel-9-pro-revisit-10-scaled.jpeg",
+            "publishedAt": "2025-07-15T13:34:33Z",
+            "content": "<ul><li>The Google Pixel 10 and Pixel 10 Pro XL have passed through the FCC website.</li><li>Both phones apparently have satellite support, and there are hints of a Samsung modem once again.</li><li>… [+1647 chars]"
         },
         {
             "source": {
                 "id": null,
-                "name": "Nintendo Life"
+                "name": "9to5google.com"
             },
-            "author": "Liam Doolan",
-            "title": "Super Mario 3D All-Stars Updated To Version 1.1.3, \"Improves Gameplay\" On Switch 2 - Nintendo Life",
-            "description": "Wahoo!",
-            "url": "https://www.nintendolife.com/news/2025/07/super-mario-3d-all-stars-updated-to-version-1-1-3-improves-gameplay-on-switch-2",
-            "urlToImage": "https://images.nintendolife.com/628c7da503aad/large.jpg",
-            "publishedAt": "2025-07-15T03:11:15Z",
-            "content": "Image: Nintendo\r\nSince the arrival of the Switch 2 last month, Nintendo has been busy updating many of its first-party Switch titles. This even includes an update for its \"limited-time\" release Super… [+1287 chars]"
+            "author": "Ben Schoon",
+            "title": "Pixel Watch 4 reportedly gets a battery boost and faster charging - 9to5Google",
+            "description": "Pixel Watch 4 will reportedly come with a battery upgrade, delivering the first real improvement for the smaller model too.",
+            "url": "http://9to5google.com/2025/07/15/google-pixel-watch-4-battery-upgrade-report/",
+            "urlToImage": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2025/03/Pixel-Watch-3-Charging-Screen.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+            "publishedAt": "2025-07-15T13:20:00Z",
+            "content": "According to a new report, Google’s Pixel Watch 4 will get a bigger battery and even faster charging, despite offering a similar overall package.\r\nTo date, we’ve not heard a ton about the Pixel Watch… [+1723 chars]"
         }
     ]
 }
