@@ -1,6 +1,6 @@
 {
     "status": "ok",
-    "totalResults": 58,
+    "totalResults": 61,
     "articles": [
         {
             "source": {
@@ -44,19 +44,6 @@
         {
             "source": {
                 "id": null,
-                "name": "EventHubs"
-            },
-            "author": "EventHubs",
-            "title": "Sagat gameplay trailer released for Street Fighter 6 - EventHubs",
-            "description": null,
-            "url": "https://www.eventhubs.com/news/2025/jul/15/sagat-gameplay-trailer-sf6/",
-            "urlToImage": null,
-            "publishedAt": "2025-07-15T22:54:59Z",
-            "content": null
-        },
-        {
-            "source": {
-                "id": null,
                 "name": "VentureBeat"
             },
             "author": "Michael Nuñez",
@@ -82,16 +69,16 @@
         },
         {
             "source": {
-                "id": null,
-                "name": "Kotaku"
+                "id": "the-verge",
+                "name": "The Verge"
             },
-            "author": "Ethan Gach",
-            "title": "Destiny 2 Hits Fans With A Nostalgia Bomb As Soon As They Start The Newest Expansion - Kotaku",
-            "description": "The Edge of Fate is a bold new direction but it begins with a familiar tune",
-            "url": "https://kotaku.com/destiny-2-edge-fate-menu-music-d1-bungie-1851786347",
-            "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/8a5bbfce286ce707e6df9fdcda369bb4.jpg",
-            "publishedAt": "2025-07-15T20:20:00Z",
-            "content": "There is a twinkling sound every time you turn on the original Destiny that lives on in the hearts of anyone who spent hundreds of hours playing it. Over a decade later, Destiny 2's newest expansion … [+2461 chars]"
+            "author": "Emma Roth",
+            "title": "Xbox tests letting you stream your own games on PC - The Verge",
+            "description": "Xbox is testing the ability to stream your own games on its PC app. The feature is rolling out to Xbox Insiders with Game Pass Ultimate subscriptions, allowing users to play games without installing them.",
+            "url": "https://www.theverge.com/news/707739/xbox-stream-your-own-game-pc-app",
+            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/stream-your-own-game-pc.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+            "publishedAt": "2025-07-15T20:25:26Z",
+            "content": "That includes titles available on console only.\r\nThat includes titles available on console only.\r\nXbox is bringing its stream your own game feature to PC. On Tuesday, the company announced that Xbox … [+915 chars]"
         },
         {
             "source": {
@@ -105,6 +92,19 @@
             "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/b6c7d59a5d5c602f9325371b2a4f5e50.jpg",
             "publishedAt": "2025-07-15T20:10:00Z",
             "content": "Since my review of 150 hours spent in Starfieldat launch, my opinion on the game has only soured. The added survival mechanics were of fleeting interest to me, and there are a handful of neat mods to… [+3241 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Zack Whittaker",
+            "title": "Exclusive: Meta fixes bug that could leak users’ AI prompts and generated content - TechCrunch",
+            "description": "The tech giant fixed the security flaw, netting a security researcher $10,000 for privately disclosing the bug.",
+            "url": "https://techcrunch.com/2025/07/15/meta-fixes-bug-that-could-leak-users-ai-prompts-and-generated-content/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2022/10/meta-distorted-glitched.jpg?resize=1200,675",
+            "publishedAt": "2025-07-15T20:00:05Z",
+            "content": "Meta has fixed a security bug that allowed Meta AI chatbot users to access and view the private prompts and AI-generated responses of other users.\r\nSandeep Hodkasia, the founder of security testing f… [+1774 chars]"
         },
         {
             "source": {
