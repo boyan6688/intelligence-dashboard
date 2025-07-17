@@ -1,95 +1,66 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 确保DOM加载完成后再执行数据加载
-    loadNewsData();
-    loadGamingNewsData(); // 同时加载游戏新闻数据
+    // 核心修复：使用正确的相对路径获取数据
+    const dataUrl = 'data/news_data.json';
+
+    // 核心修复：确保ID选择器与index.html中的ID完全匹配
+    const techNewsContainer = document.getElementById('tech-news-container');
+    const gamingNewsContainer = document.getElementById('gaming-news-container');
+
+    if (!techNewsContainer || !gamingNewsContainer) {
+        console.error('关键错误: 未在页面中找到ID为 "tech-news-container" 或 "gaming-news-container" 的元素。');
+        return;
+    }
+
+    fetch(dataUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP 错误! 状态: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            const allNews = data.news_items;
+
+            // 分类并填充新闻
+            const techNews = allNews.filter(item => item.category === 'Technology');
+            const gamingNews = allNews.filter(item => item.category === 'Gaming');
+
+            populateNews(techNews, techNewsContainer, '科技新闻');
+            populateNews(gamingNews, gamingNewsContainer, '游戏新闻');
+        })
+        .catch(error => {
+            console.error('加载或处理新闻数据时失败:', error);
+            techNewsContainer.innerHTML = `<p style="color: red;">科技新闻加载失败。请检查浏览器控制台获取更多信息。</p>`;
+            gamingNewsContainer.innerHTML = `<p style="color: red;">游戏新闻加载失败。请检查浏览器控制台获取更多信息。</p>`;
+        });
+
+    function populateNews(newsItems, container, categoryName) {
+        // 清空容器（例如，移除“正在加载...”提示）
+        container.innerHTML = '';
+
+        if (!newsItems || newsItems.length === 0) {
+            container.innerHTML = `<p>暂无${categoryName}。</p>`;
+            return;
+        }
+
+        const list = document.createElement('ul');
+        newsItems.forEach(item => {
+            const listItem = document.createElement('li');
+            
+            const link = document.createElement('a');
+            link.href = item.link;
+            link.textContent = item.title;
+            link.target = '_blank'; // 在新标签页打开链接
+            link.rel = 'noopener noreferrer';
+            
+            const sourceSpan = document.createElement('span');
+            sourceSpan.className = 'news-source'; // 用于CSS样式
+            sourceSpan.textContent = ` (${item.source})`;
+
+            listItem.appendChild(link);
+            listItem.appendChild(sourceSpan);
+            list.appendChild(listItem);
+        });
+        container.appendChild(list);
+    }
 });
-
-function loadNewsData() {
-    // 路径是相对于 index.html 的正确相对路径
-    const newsDataUrl = 'data/news_data.json'; 
-
-    fetch(newsDataUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status} for ${newsDataUrl}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            // 关键修复：确保使用正确且存在的HTML元素ID 'tech-news-container'
-            const newsContainer = document.getElementById('tech-news-container'); 
-            if (!newsContainer) {
-                console.error('Error: Element with id "tech-news-container" not found.');
-                return;
-            }
-            newsContainer.innerHTML = ''; // 清空旧内容
-
-            if (data.articles && data.articles.length > 0) {
-                const articlesToShow = data.articles.slice(0, 10); // 只显示前10条
-                articlesToShow.forEach(article => {
-                    const newsItem = document.createElement('div');
-                    newsItem.className = 'p-2 border-b';
-                    newsItem.innerHTML = `
-                        <h3 class="font-bold"><a href="${article.url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${article.title}</a></h3>
-                        <p class="text-sm text-gray-600">${article.description || '暂无描述'}</p>
-                        <small class="text-xs text-gray-400">来源: ${article.source.name}</small>
-                    `;
-                    newsContainer.appendChild(newsItem);
-                });
-            } else {
-                newsContainer.innerHTML = '<p>未能加载到科技新闻。</p>';
-            }
-        })
-        .catch(error => {
-            console.error('加载或解析科技新闻数据时出错:', error);
-            const newsContainer = document.getElementById('tech-news-container');
-            if (newsContainer) {
-                newsContainer.innerHTML = '<p>加载科技新闻失败，请检查浏览器控制台获取详细信息。</p>';
-            }
-        });
-}
-
-function loadGamingNewsData() {
-    // 同样使用正确的相对路径
-    const gamingNewsDataUrl = 'data/gaming_news_data.json';
-
-    fetch(gamingNewsDataUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status} for ${gamingNewsDataUrl}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            // 关键修复：确保使用正确且存在的HTML元素ID 'gaming-news-container'
-            const gamingNewsContainer = document.getElementById('gaming-news-container');
-            if (!gamingNewsContainer) {
-                console.error('Error: Element with id "gaming-news-container" not found.');
-                return;
-            }
-            gamingNewsContainer.innerHTML = ''; // 清空旧内容
-
-            if (data.articles && data.articles.length > 0) {
-                const articlesToShow = data.articles.slice(0, 10); // 只显示前10条
-                articlesToShow.forEach(article => {
-                    const newsItem = document.createElement('div');
-                    newsItem.className = 'p-2 border-b';
-                    newsItem.innerHTML = `
-                        <h3 class="font-bold"><a href="${article.url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${article.title}</a></h3>
-                        <p class="text-sm text-gray-600">${article.description || '暂无描述'}</p>
-                        <small class="text-xs text-gray-400">来源: ${article.source.name}</small>
-                    `;
-                    gamingNewsContainer.appendChild(newsItem);
-                });
-            } else {
-                gamingNewsContainer.innerHTML = '<p>未能加载到游戏新闻。</p>';
-            }
-        })
-        .catch(error => {
-            console.error('加载或解析游戏新闻数据时出错:', error);
-            const gamingNewsContainer = document.getElementById('gaming-news-container');
-            if (gamingNewsContainer) {
-                gamingNewsContainer.innerHTML = '<p>加载游戏新闻失败，请检查浏览器控制台获取详细信息。</p>';
-            }
-        });
-}
