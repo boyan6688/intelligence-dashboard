@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>情报仪表盘 - 最终修复版</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>情报仪表盘</title>
+    <!-- 假设你有一个CSS文件，如果没有可以移除此行 -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="bg-gray-100">
+<body>
 
-    <header class="bg-white shadow-md">
-        <h1 class="text-3xl font-bold text-center py-4">情报仪表盘</h1>
+    <header>
+        <h1>情报仪表盘</h1>
     </header>
 
-    <main class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-        
-        <section id="tech-news-section" class="bg-white p-4 rounded-lg shadow">
-            <h2 class="text-2xl font-semibold mb-4">最新科技新闻</h2>
-            <!-- 关键修复：ID 已更正为 'tech-news-container' -->
-            <div id="tech-news-container" class="space-y-4">
+    <main>
+        <section class="news-category">
+            <h2>科技新闻</h2>
+            <!-- 核心修复：确保ID正确 -->
+            <div id="tech-news-container" class="news-container">
                 <p>正在加载新闻...</p>
             </div>
         </section>
 
-        <section id="gaming-news-section" class="bg-white p-4 rounded-lg shadow">
-            <h2 class="text-2xl font-semibold mb-4">最新游戏资讯</h2>
-            <!-- 关键修复：ID 已更正为 'gaming-news-container' -->
-            <div id="gaming-news-container" class="space-y-4">
+        <section class="news-category">
+            <h2>游戏新闻</h2>
+            <!-- 核心修复：确保ID正确 -->
+            <div id="gaming-news-container" class="news-container">
                 <p>正在加载新闻...</p>
             </div>
         </section>
-
     </main>
 
-    <!-- 关键修复：脚本路径已更正为 'scripts/scripts.js' -->
-    <script src="scripts/scripts.js"></script>
+    <footer>
+        <p>&copy; 2025 情报仪表盘</p>
+    </footer>
+
+    <!-- 核心修复：确保此脚本标签存在、路径正确，并使用 defer 属性优化加载 -->
+    <script defer src="scripts/scripts.js"></script>
 
 </body>
 </html>
