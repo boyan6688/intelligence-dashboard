@@ -1,43 +1,53 @@
 name: Update News Data
 
+# 触发器：允许手动从 Actions 页面运行此工作流
 on:
-  schedule:
-    # 每4小时运行一次 (UTC时间 0, 4, 8, 12, 16, 20点)
-    - cron: '0 */4 * * *'
-  # 允许手动触发
   workflow_dispatch:
+
+# 权限设置：必须授予 'contents: write' 权限，以便 Action 可以向仓库推送 gh-pages 分支
+permissions:
+  contents: write
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
     steps:
-      # 步骤 1: 拉取代码
-      # 关键改动：明确指定从 gh-pages 分支拉取代码
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v3
-        with:
-          ref: gh-pages
+      # 第 1 步：检出主分支代码，以获取 Python 脚本和依赖文件
+      - name: Checkout main branch
+        uses: actions/checkout@v4
 
-      # 步骤 2: 设置 Python 环境
+      # 第 2 步：设置 Python 环境
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
-      # 步骤 3: 安装依赖
+      # 第 3 步：安装 Python 依赖
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      # 步骤 4: 运行数据抓取脚本
+      # 第 4 步：运行脚本以抓取数据并生成 news_data.json
+      # 脚本会将生成的文件保存到 data/news_data.json
       - name: Run script to fetch and save data
-        run: python scripts/fetch_news.py
+        run: python update_data.pyy # <-- 请将 'your_script_name.py' 替换为您的实际脚本文件名
 
-      # 步骤 5: 提交并推送数据文件
-      # 关键改动：明确指定将改动推送到 gh-pages 分支
-      - name: Commit and push if data changed
-        uses: ad-m/github-push-action@master
+      # 第 5 步：使用 peaceiris/actions-gh-pages 部署数据文件
+      # 这是核心步骤，它会自动处理所有 git 操作
+      - name: Deploy data to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
+          # 使用 GitHub Actions 自动提供的令牌进行认证
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          # 添加提交信息，方便追踪
-          commit_message: "Automated: Update news data"
+          
+          # 指定要发布到 gh-pages 分支的目录
+          # 我们只需要发布包含 news_data.json 的 data 目录
+          publish_dir: ./data
+          
+          # 关键配置：保留 gh-pages 分支中的现有文件
+          # 这可以防止仪表盘的 index.html 等其他文件被意外删除
+          keep_files: true
+          
+          # 自定义的提交信息，方便追踪历史记录
+          commit_message: 'chore(data): Update news_data.json'
