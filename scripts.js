@@ -1,11 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // 关键修复：确保使用正确的相对路径获取数据文件。
-    // 由于 news_data.json 和 index.html 在同一目录下，直接使用文件名即可。
-    fetch('news_data.json')
+document.addEventListener('DOMContentLoaded', function() {
+    // ...
+    fetch('data/news_data.json') // <--- 修正行
         .then(response => {
             if (!response.ok) {
-                // 如果请求失败，抛出错误，方便在控制台调试
-                throw new Error(`Network response was not ok: ${response.statusText}`);
+                throw new Error('Network response was not ok ' + response.statusText);
             }
             return response.json();
         })
