@@ -1,123 +1,134 @@
-{
-    "status": "ok",
-    "totalResults": 58,
-    "articles": [
-        {
-            "source": {
-                "id": null,
-                "name": "Nintendo Life"
-            },
-            "author": "Liam Doolan",
-            "title": "Nintendo Announces 'Global Jam' Demo Event For Switch 2 Online Members - Nintendo Life",
-            "description": "Try out Drag x Drive before its release",
-            "url": "https://www.nintendolife.com/news/2025/07/nintendo-announces-global-jam-demo-event-for-switch-2-online-members",
-            "urlToImage": "https://images.nintendolife.com/999798a5d7097/large.jpg",
-            "publishedAt": "2025-07-16T01:05:00Z",
-            "content": "Image: Nintendo\r\nAs we get closer to August, Nintendo has announced it will be hosting a special Drag x Drive 'Global Jam' demo event.\r\nThis demo, which will give players a \"sneak peek\" at this new t… [+785 chars]"
-        },
-        {
-            "source": {
-                "id": "the-verge",
-                "name": "The Verge"
-            },
-            "author": "Jay Peters",
-            "title": "Now Microsoft’s Copilot Vision AI can scan everything on your screen - The Verge",
-            "description": "Microsoft is rolling out an update to Copilot Vision for Windows Insiders that lets the AI tool see everything that’s on your screen.",
-            "url": "https://www.theverge.com/news/707995/microsoft-copilot-vision-ai-windows-scan-screen-desktop",
-            "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/07/STK259_MICROSOFT_COPILOT_2__C.png?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-            "publishedAt": "2025-07-15T23:49:02Z",
-            "content": "Copilot Vision will be able to look at your whole desktop.\r\nMicrosoft is rolling out an update to Copilot Vision for Windows Insiders that lets the AI tool see everything thats on your screen. Previo… [+1004 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Push Square"
-            },
-            "author": "Darren Calvert",
-            "title": "Deals: Make Epic Savings on PS5 in Meaty PS Direct Summer Sale - Push Square",
-            "description": "Europe scores some sizeable discounts",
-            "url": "https://www.pushsquare.com/guides/deals-make-epic-savings-on-ps5-in-meaty-ps-direct-summer-sale",
-            "urlToImage": "https://images.pushsquare.com/57fb7f5851a25/large.jpg",
-            "publishedAt": "2025-07-15T23:36:53Z",
-            "content": "Image: Push Square\r\nSonys looking to stimulate more PS5 sales this summer.\r\nIn the aftermath of Days of Play, the platform holder is once again bucking industry trends by discounting a bunch of its p… [+1317 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "EventHubs"
-            },
-            "author": "EventHubs",
-            "title": "Sagat gameplay trailer released for Street Fighter 6 - EventHubs",
-            "description": null,
-            "url": "https://www.eventhubs.com/news/2025/jul/15/sagat-gameplay-trailer-sf6/",
-            "urlToImage": null,
-            "publishedAt": "2025-07-15T22:54:59Z",
-            "content": null
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "VentureBeat"
-            },
-            "author": "Michael Nuñez",
-            "title": "OpenAI, Google DeepMind and Anthropic sound alarm: 'We may be losing the ability to understand AI' - VentureBeat",
-            "description": "Scientists from OpenAI, Google, Anthropic and Meta unite in rare collaboration to warn that a critical window for monitoring AI reasoning may close forever as models learn to hide their thoughts.",
-            "url": "https://venturebeat.com/ai/openai-google-deepmind-and-anthropic-sound-alarm-we-may-be-losing-the-ability-to-understand-ai/",
-            "urlToImage": "https://venturebeat.com/wp-content/uploads/2025/07/nuneybits_Vector_art_of_an_hourglass_on_a_laptop_5b7fe460-16b1-4fd4-9324-2285aa848af8.webp?w=1024?w=1200&strip=all",
-            "publishedAt": "2025-07-15T22:49:59Z",
-            "content": "Want smarter insights in your inbox? Sign up for our weekly newsletters to get only what matters to enterprise AI, data, and security leaders.Subscribe Now\r\nScientists from OpenAI, Google DeepMind, A… [+2011 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "9to5Mac"
-            },
-            "author": "Ryan Christoffel",
-            "title": "Car Keys are coming to the Wallet app for 13 new vehicle brands soon - 9to5Mac",
-            "description": "Apple recently announced 13 new vehicle brands that will soon support Car Key in the Wallet app for iPhone and Apple Watch. Here’s the list.",
-            "url": "https://9to5mac.com/2025/07/15/car-keys-are-coming-to-the-wallet-app-for-13-new-vehicle-brands-soon/",
-            "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/06/apple-wallet-ios-26.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
-            "publishedAt": "2025-07-15T20:59:00Z",
-            "content": "Apple made several exciting car-related announcements at WWDC last month. In addition to showing off some great new CarPlay features, the company shared that car keys will soon be supported by 13 new… [+1763 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Kotaku"
-            },
-            "author": "Ethan Gach",
-            "title": "Destiny 2 Hits Fans With A Nostalgia Bomb As Soon As They Start The Newest Expansion - Kotaku",
-            "description": "The Edge of Fate is a bold new direction but it begins with a familiar tune",
-            "url": "https://kotaku.com/destiny-2-edge-fate-menu-music-d1-bungie-1851786347",
-            "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/8a5bbfce286ce707e6df9fdcda369bb4.jpg",
-            "publishedAt": "2025-07-15T20:20:00Z",
-            "content": "There is a twinkling sound every time you turn on the original Destiny that lives on in the hearts of anyone who spent hundreds of hours playing it. Over a decade later, Destiny 2's newest expansion … [+2461 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Kotaku"
-            },
-            "author": "Claire Jackson",
-            "title": "Two Years Later, Starfield Still Hasn't Given Me A Reason To Care - Kotaku",
-            "description": "We were supposed to be thrilled with the game’s ‘magnificent desolation’",
-            "url": "https://kotaku.com/starfield-exploration-astronauts-moon-boring-1851786351",
-            "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/b6c7d59a5d5c602f9325371b2a4f5e50.jpg",
-            "publishedAt": "2025-07-15T20:10:00Z",
-            "content": "Since my review of 150 hours spent in Starfieldat launch, my opinion on the game has only soured. The added survival mechanics were of fleeting interest to me, and there are a handful of neat mods to… [+3241 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Kotaku"
-            },
-            "author": "Zack Zwiezen",
-            "title": "Minecraft Adds Jack Black's Lava Chicken Song, But You Gotta Do Something Special To Get It - Kotaku",
-            "description": "La-la-la-lava! Ch-ch-ch-chicken! \"Steve's Lava Chicken\" is now in the actual game!",
-            "url": "https://kotaku.com/minecraft-movie-lava-chicken-jockey-easter-egg-game-1851786345",
-            "urlToImage": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/5a6de5c80d58758a36639cc2b088f6c6.jpg",
-            "publishedAt": "2025-07-15T19:45:00Z",
-            "content": "Remember that really catchy but also very annoying Jack Black song Lava Chicken from the Minecraft movie? If you are a parent with kids under the age of 16, you likely do, and you are probably so hap… [+1905 chars]"
-        }
-    ]
-}
+[
+  {
+    "id": "cn_mlf_cut_20250713",
+    "category": "国内",
+    "headline": "中国人民银行意外宣布下调MLF利率15个基点",
+    "sourceName": "中国人民银行",
+    "sourceUrl": "http://www.pbc.gov.cn/",
+    "iso_timestamp": "2025-07-13T09:00:00Z",
+    "summary": "央行开展4000亿元MLF操作，并将中标利率从2.50%下调至2.35%，旨在降低实体经济融资成本，应对经济复苏压力。",
+    "importance_score": 95,
+    "analysis": {
+      "logic": "主动性货币宽松。在经济数据显示复苏动能减弱的背景下，央行通过超预期的降息向市场注入强烈的“稳增长”政策信号，主动管理总需求。",
+      "path": "下调MLF利率 → 引导贷款市场报价利率(LPR)下行 → 降低企业和居民的借贷成本 → 刺激信贷扩张和投资消费 → 对冲经济下行压力。",
+      "reaction": {
+        "a_share": "重大利好。市场流动性预期改善，风险偏好提升，尤其利好对利率敏感的金融、地产及高估值的成长板块。",
+        "hk_stock": "重大利好。与A股逻辑联动，南向资金流入预期增强，提振市场情绪。",
+        "us_stock": "无关系",
+        "us_bond": "无关系",
+        "gold": "间接利好。货币宽松政策降低了持有黄金的机会成本。",
+        "sectors": "金融（银行、券商）、房地产、周期性行业、成长股。"
+      }
+    }
+  },
+  {
+    "id": "cn_new_infra_20250712",
+    "category": "国内",
+    "headline": "国家发改委发布《加快推进“新基建”面向民生领域应用的指导意见》",
+    "sourceName": "国家发改委",
+    "sourceUrl": "http://www.ndrc.gov.cn/",
+    "iso_timestamp": "2025-07-12T10:30:00Z",
+    "summary": "文件明确提出将加快5G、人工智能等技术与医疗、教育、养老等民生领域深度融合，并通过财政补贴、专项债等方式支持。",
+    "importance_score": 78,
+    "analysis": {
+      "logic": "产业政策与财政刺激。通过政府引导性投资，将供给侧的技术创新（新基建）与需求侧的民生改善相结合，实现短期稳增长和长期结构优化的双重目标。",
+      "path": "发布指导意见 → 财政资金（补贴、专项债）注入 → “新基建”项目上马（如智慧医疗、在线教育） → 相关产业链（通信设备、软件、服务器）获得订单 → 带动投资和就业 → 提升公共服务效率和质量。",
+      "reaction": {
+        "a_share": "明确利好。直接利好新基建产业链上下游公司，如5G、AI、工业互联网、数据中心等。应用端的医疗IT、教育科技公司同样受益。",
+        "hk_stock": "利好。与A股逻辑类似，相关科技和应用板块将受提振。",
+        "us_stock": "无关系",
+        "us_bond": "无关系",
+        "gold": "无关系",
+        "sectors": "通信、计算机（云计算、AI）、电子、医疗信息化、在线教育。"
+      }
+    }
+  },
+  {
+    "id": "cn_rd_deduction_20250710",
+    "category": "国内",
+    "headline": "财政部宣布提高战略性新兴产业研发费用加计扣除比例至150%",
+    "sourceName": "财政部",
+    "sourceUrl": "http://www.mof.gov.cn/",
+    "iso_timestamp": "2025-07-10T18:00:00Z",
+    "summary": "为鼓励企业创新，对半导体、AI、生物医药等领域符合条件的企业，其研发费用加计扣除比例由100%提升至150%。",
+    "importance_score": 88,
+    "analysis": {
+      "logic": "精准财政激励。旨在通过大规模减税直接降低高科技企业的创新成本，是推动产业升级、实现关键技术自主可控的国家战略体现。",
+      "path": "提高研发费用加计扣除比例 → 企业应纳税所得额减少 → 实际税负降低，现金流改善 → 企业有更多资金投入新的研发活动 → 加速技术突破和产品迭代。",
+      "reaction": {
+        "a_share": "重大利好。对科创板、创业板等科技股集中的板块构成实质性利好，显著提升相关公司盈利预期。",
+        "hk_stock": "利好。在港上市的符合条件的内地科技公司同样受益。",
+        "us_stock": "无关系",
+        "us_bond": "无关系",
+        "gold": "无关系",
+        "sectors": "半导体、人工智能、生物医药、高端制造。"
+      }
+    }
+  },
+  {
+    "id": "us_nfp_20250713",
+    "category": "国外",
+    "headline": "美国6月非农就业人口增加28.5万，远超预期",
+    "sourceName": "Bureau of Labor Statistics",
+    "sourceUrl": "https://www.bls.gov/",
+    "iso_timestamp": "2025-07-13T08:30:00Z",
+    "summary": "美国6月非农就业人口显著高于市场预期的19万人，失业率降至3.9%，薪资增长略超预期。强劲数据给美联储降息前景带来不确定性。",
+    "importance_score": 92,
+    "analysis": {
+      "logic": "劳动力市场过热信号。强劲的就业和薪资增长表明经济韧性，但也可能加剧通胀压力，迫使货币政策制定者采取更鹰派的立场。",
+      "path": "就业数据超预期 → 市场修正对美联储降息的预期（推迟或降低降息幅度） → 短期和长期利率预期上升 → 美元走强 → 风险资产定价面临压力（估值收缩）。",
+      "reaction": {
+        "a_share": "间接利空。美元走强可能导致新兴市场资金外流，对A股情绪有短期负面影响。人民币汇率承压。",
+        "hk_stock": "间接利空。与A股逻辑类似，全球流动性预期收紧，对港股市场造成压力。",
+        "us_stock": "短期利空。更高的利率预期对成长型科技股的估值构成压力。周期性股票可能表现相对较好。",
+        "us_bond": "利空。债券价格下跌，收益率上升，尤其是对政策利率敏感的2年期国债。",
+        "gold": "利空。更高的真实利率和更强的美元都对无息资产黄金构成显著压力。",
+        "sectors": "（美股）银行、工业等周期性板块相对抗跌；科技、房地产等利率敏感板块承压。"
+      }
+    }
+  },
+  {
+    "id": "us_powell_testimony_20250711",
+    "category": "国外",
+    "headline": "鲍威尔国会证词：年内降息大门未完全关闭",
+    "sourceName": "Federal Reserve",
+    "sourceUrl": "https://www.federalreserve.gov/",
+    "iso_timestamp": "2025-07-11T22:30:00Z",
+    "summary": "美联储主席鲍威尔表示需看到通胀持续下行的更多证据，但未排除在经济意外放缓情况下于年内降息的可能性。",
+    "importance_score": 85,
+    "analysis": {
+      "logic": "政策预期管理。通过“鹰中带鸽”的言论，在不承诺降息的同时安抚市场，为未来的政策决策保留最大的灵活性和选择空间。",
+      "path": "鲍威尔发表模糊性证词 → 市场解读为“只要数据配合，仍可能降息” → “鲍威尔看跌期权”依然有效 → 风险资产获得喘息之机。",
+      "reaction": {
+        "a_share": "间接利好。全球风险情绪缓和，有助于稳定外部环境。",
+        "hk_stock": "间接利好。流动性敏感的港股市场受益于降息预期的维系。",
+        "us_stock": "利好。不确定性有所降低，对利率敏感的科技股和成长股反应积极。",
+        "us_bond": "利好。债券收益率小幅下行，价格上涨。",
+        "gold": "利好。降息可能性未被排除，对黄金构成支撑。",
+        "sectors": "（美股）科技、非必需消费品等成长性板块。"
+      }
+    }
+  },
+  {
+    "id": "jp_boj_20250709",
+    "category": "国外",
+    "headline": "日本央行维持利率不变，但暗示将讨论缩减购债规模",
+    "sourceName": "Bank of Japan",
+    "sourceUrl": "https://www.boj.or.jp/en/",
+    "iso_timestamp": "2025-07-09T11:15:00Z",
+    "summary": "日本央行宣布维持政策利率不变，但将在下次会议上决定缩减国债购买规模的具体计划，被视为货币政策正常化的又一步。",
+    "importance_score": 75,
+    "analysis": {
+      "logic": "谨慎的货币政策正常化。日本央行试图通过“口头紧缩”来测试市场反应，为未来实质性缩减QE铺路，以应对通胀和日元贬值压力。",
+      "path": "暗示缩减购债 → 市场预期日本流动性将边际收紧 → 日元升值预期增强 → 可能触发日元套利交易平仓（卖出海外资产，买入日元）→ 全球流动性减少。",
+      "reaction": {
+        "a_share": "潜在利空。全球流动性收紧和风险偏好下降可能对A股造成负面溢出效应。",
+        "hk_stock": "潜在利空。与A股逻辑相似，且可能更受全球流动性影响。",
+        "us_stock": "潜在利空。日元套利交易平仓可能导致美股被抛售。",
+        "us_bond": "潜在利空。日本投资者是美债的大买家，其资金回流可能导致美债被抛售，收益率上升。",
+        "gold": "无关系",
+        "sectors": "全球股市，尤其是被套利交易广泛持有的资产。"
+      }
+    }
+  }
+]
