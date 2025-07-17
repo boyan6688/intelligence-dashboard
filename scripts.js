@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 核心修复：使用正确的相对路径获取数据
+    // 使用正确的相对路径获取合并后的数据文件
     const dataUrl = 'data/news_data.json';
 
-    // 核心修复：确保ID选择器与index.html中的ID完全匹配
+    // 确保ID选择器与index.html中的ID完全匹配
     const techNewsContainer = document.getElementById('tech-news-container');
     const gamingNewsContainer = document.getElementById('gaming-news-container');
 
@@ -14,6 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch(dataUrl)
         .then(response => {
             if (!response.ok) {
+                // 如果文件未找到(404)，提供更具体的错误提示
+                if(response.status === 404) {
+                    throw new Error(`数据文件未找到(404): ${dataUrl}。请检查GitHub Action是否成功运行并生成了此文件。`);
+                }
                 throw new Error(`HTTP 错误! 状态: ${response.status}`);
             }
             return response.json();
@@ -21,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             const allNews = data.news_items;
 
-            // 分类并填充新闻
+            // 根据Python脚本中设置的'category'字段进行分类
             const techNews = allNews.filter(item => item.category === 'Technology');
             const gamingNews = allNews.filter(item => item.category === 'Gaming');
 
@@ -30,13 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('加载或处理新闻数据时失败:', error);
-            techNewsContainer.innerHTML = `<p style="color: red;">科技新闻加载失败。请检查浏览器控制台获取更多信息。</p>`;
-            gamingNewsContainer.innerHTML = `<p style="color: red;">游戏新闻加载失败。请检查浏览器控制台获取更多信息。</p>`;
+            techNewsContainer.innerHTML = `<p style="color: red;">科技新闻加载失败。详情: ${error.message}</p>`;
+            gamingNewsContainer.innerHTML = `<p style="color: red;">游戏新闻加载失败。详情: ${error.message}</p>`;
         });
 
     function populateNews(newsItems, container, categoryName) {
-        // 清空容器（例如，移除“正在加载...”提示）
-        container.innerHTML = '';
+        container.innerHTML = ''; // 清空容器
 
         if (!newsItems || newsItems.length === 0) {
             container.innerHTML = `<p>暂无${categoryName}。</p>`;
@@ -50,11 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const link = document.createElement('a');
             link.href = item.link;
             link.textContent = item.title;
-            link.target = '_blank'; // 在新标签页打开链接
+            link.target = '_blank';
             link.rel = 'noopener noreferrer';
             
             const sourceSpan = document.createElement('span');
-            sourceSpan.className = 'news-source'; // 用于CSS样式
+            sourceSpan.className = 'news-source';
             sourceSpan.textContent = ` (${item.source})`;
 
             listItem.appendChild(link);
