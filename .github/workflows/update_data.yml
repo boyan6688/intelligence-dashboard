@@ -5,10 +5,9 @@ name: Update Data and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # 当 main 分支有更新时触发
-  workflow_dispatch: # 允许手动触发
+      - main
+  workflow_dispatch:
 
-# 关键修复：为工作流授予向 gh-pages 分支写入内容的权限
 permissions:
   contents: write
 
@@ -26,18 +25,19 @@ jobs:
 
       - name: Run Python script to update data
         run: |
-          # 如果有依赖，可以在这里安装
-          # pip install -r requirements.txt
-          python update_data.py # 假设此脚本会生成或更新 ./data/news_data.json
+          python update_data.py
+
+      # 【推荐】增加的调试步骤
+      - name: Verify generated files
+        run: |
+          echo "Verifying workspace contents before deployment..."
+          ls -R
+          echo "Checking content of news data file..."
+          cat data/news_data.json || echo "news_data.json not found or is empty."
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # 核心修复：将发布目录从 './data' 改为 './'
-          # 这会发布仓库中的所有文件 (index.html, main.css, scripts.js, 和 data/ 目录)
-          # 而不是仅仅发布 data 目录。
           publish_dir: ./
-          # keep_files: false 保持不变是好的实践，它确保了每次部署都是一个干净的状态。
-          # 因为现在 publish_dir 正确了，所以它会先清空，然后上传所有正确的文件。
           keep_files: false
