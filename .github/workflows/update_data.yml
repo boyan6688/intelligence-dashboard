@@ -1,53 +1,53 @@
 name: Update News Data
 
-# 触发器：允许手动从 Actions 页面运行此工作流
 on:
+  # 每30分钟自动运行一次
+  schedule:
+    - cron: '*/30 * * * *'
+  # 允许在 Actions 页面手动触发此工作流
   workflow_dispatch:
-
-# 权限设置：必须授予 'contents: write' 权限，以便 Action 可以向仓库推送 gh-pages 分支
-permissions:
-  contents: write
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    # 关键修复：授予工作流向仓库写入内容的权限
+    permissions:
+      contents: write
+
     steps:
-      # 第 1 步：检出主分支代码，以获取 Python 脚本和依赖文件
+      # 第一步：检出你的主分支代码
       - name: Checkout main branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      # 第 2 步：设置 Python 环境
+      # 第二步：设置 Python 环境
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.x' # 使用 Python 3.x
 
-      # 第 3 步：安装 Python 依赖
+      # 第三步：安装依赖项
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      # 第 4 步：运行脚本以抓取数据并生成 news_data.json
-      # 脚本会将生成的文件保存到 data/news_data.json
-      - name: Run script to fetch and save data
-        run: python update_data.pyy # <-- 请将 'your_script_name.py' 替换为您的实际脚本文件名
+      # 第四步：执行你的 Python 脚本更新数据
+      - name: Run Python script to update data
+        run: python update_data.py
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
 
-      # 第 5 步：使用 peaceiris/actions-gh-pages 部署数据文件
-      # 这是核心步骤，它会自动处理所有 git 操作
-      - name: Deploy data to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
+      # 第五步：使用专门的 Action 将更改推送到 gh-pages 分支
+      # 这是解决 git fetch/push 问题的行业标准方案
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # 使用 GitHub Actions 自动提供的令牌进行认证
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          
-          # 指定要发布到 gh-pages 分支的目录
-          # 我们只需要发布包含 news_data.json 的 data 目录
+          # 指定要部署的分支为 gh-pages
+          publish_branch: gh-pages
+          # 指定要发布的内容目录，这里是包含 news_data.json 的 data 目录
           publish_dir: ./data
-          
-          # 关键配置：保留 gh-pages 分支中的现有文件
-          # 这可以防止仪表盘的 index.html 等其他文件被意外删除
+          # 保持目标分支 (gh-pages) 的历史记录，只更新 data 目录
           keep_files: true
-          
-          # 自定义的提交信息，方便追踪历史记录
-          commit_message: 'chore(data): Update news_data.json'
+          # 自定义提交信息
+          commit_message: 'docs: Auto-update news data'
