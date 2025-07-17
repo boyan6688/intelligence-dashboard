@@ -3,40 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>情报仪表盘</title>
-    <!-- 假设你有一个CSS文件，如果没有可以移除此行 -->
-    <link rel="stylesheet" href="styles/style.css">
+    <title>实时新闻</title>
+    <!-- 确保 CSS 文件路径正确 -->
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
     <header>
-        <h1>情报仪表盘</h1>
+        <h1>最新新闻动态</h1>
     </header>
 
     <main>
-        <section class="news-category">
-            <h2>科技新闻</h2>
-            <!-- 确保ID正确 -->
-            <div id="tech-news-container" class="news-container">
-                <p>正在加载新闻...</p>
-            </div>
-        </section>
-
-        <section class="news-category">
-            <h2>游戏新闻</h2>
-            <!-- 确保ID正确 -->
-            <div id="gaming-news-container" class="news-container">
-                <p>正在加载新闻...</p>
-            </div>
-        </section>
+        <!-- 为 JavaScript 提供一个清晰的目标容器来填充新闻内容 -->
+        <div id="news-container">
+            <p>正在加载新闻...</p>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 情报仪表盘</p>
-    </footer>
-
-    <!-- 确保此脚本标签存在、路径正确，并使用 defer 属性优化加载 -->
-    <script defer src="scripts/scripts.js"></script>
+    <!-- 确保 JS 文件路径正确，'defer' 属性确保在 HTML 解析完毕后执行脚本 -->
+    <script src="scripts.js" defer></script>
 
 </body>
 </html>
