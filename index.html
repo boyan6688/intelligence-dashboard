@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>实时新闻</title>
-    <!-- 确保 CSS 文件路径正确 -->
+    <title>情报仪表盘</title>
+    <!-- 关键修复点 1: 正确引用 CSS 文件 -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-    <header>
-        <h1>最新新闻动态</h1>
-    </header>
-
-    <main>
-        <!-- 为 JavaScript 提供一个清晰的目标容器来填充新闻内容 -->
+    <div class="dashboard-container">
+        <h1>最新情报</h1>
+        
+        <!-- 关键修复点 3: 提供JS挂载目标，并设置初始状态 -->
         <div id="news-container">
-            <p>正在加载新闻...</p>
+            <p class="loading-message">正在加载新闻...</p>
         </div>
-    </main>
+    </div>
 
-    <!-- 确保 JS 文件路径正确，'defer' 属性确保在 HTML 解析完毕后执行脚本 -->
+    <!-- 关键修复点 2: 修正 JS 文件路径并使用 defer 属性 -->
     <script src="scripts.js" defer></script>
 
 </body>
