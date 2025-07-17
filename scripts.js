@@ -5,19 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function loadNewsData() {
-    // 关键修复(1): 路径必须是相对于 index.html 的正确相对路径
+    // 路径是相对于 index.html 的正确相对路径
     const newsDataUrl = 'data/news_data.json'; 
 
     fetch(newsDataUrl)
         .then(response => {
             if (!response.ok) {
-                // 如果请求失败，抛出错误，方便在控制台看到
                 throw new Error(`HTTP error! status: ${response.status} for ${newsDataUrl}`);
             }
             return response.json();
         })
         .then(data => {
-            // 关键修复(2): 确保使用正确且存在的HTML元素ID
+            // 关键修复：确保使用正确且存在的HTML元素ID 'tech-news-container'
             const newsContainer = document.getElementById('tech-news-container'); 
             if (!newsContainer) {
                 console.error('Error: Element with id "tech-news-container" not found.');
@@ -29,11 +28,11 @@ function loadNewsData() {
                 const articlesToShow = data.articles.slice(0, 10); // 只显示前10条
                 articlesToShow.forEach(article => {
                     const newsItem = document.createElement('div');
-                    newsItem.className = 'news-item'; // 方便CSS美化
+                    newsItem.className = 'p-2 border-b';
                     newsItem.innerHTML = `
-                        <h3><a href="${article.url}" target="_blank" rel="noopener noreferrer">${article.title}</a></h3>
-                        <p>${article.description || '暂无描述'}</p>
-                        <small>来源: ${article.source.name}</small>
+                        <h3 class="font-bold"><a href="${article.url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${article.title}</a></h3>
+                        <p class="text-sm text-gray-600">${article.description || '暂无描述'}</p>
+                        <small class="text-xs text-gray-400">来源: ${article.source.name}</small>
                     `;
                     newsContainer.appendChild(newsItem);
                 });
@@ -51,7 +50,7 @@ function loadNewsData() {
 }
 
 function loadGamingNewsData() {
-    // 关键修复(1): 同样使用正确的相对路径
+    // 同样使用正确的相对路径
     const gamingNewsDataUrl = 'data/gaming_news_data.json';
 
     fetch(gamingNewsDataUrl)
@@ -62,7 +61,7 @@ function loadGamingNewsData() {
             return response.json();
         })
         .then(data => {
-            // 关键修复(2): 确保使用正确且存在的HTML元素ID
+            // 关键修复：确保使用正确且存在的HTML元素ID 'gaming-news-container'
             const gamingNewsContainer = document.getElementById('gaming-news-container');
             if (!gamingNewsContainer) {
                 console.error('Error: Element with id "gaming-news-container" not found.');
@@ -74,11 +73,11 @@ function loadGamingNewsData() {
                 const articlesToShow = data.articles.slice(0, 10); // 只显示前10条
                 articlesToShow.forEach(article => {
                     const newsItem = document.createElement('div');
-                    newsItem.className = 'news-item'; // 方便CSS美化
+                    newsItem.className = 'p-2 border-b';
                     newsItem.innerHTML = `
-                        <h3><a href="${article.url}" target="_blank" rel="noopener noreferrer">${article.title}</a></h3>
-                        <p>${article.description || '暂无描述'}</p>
-                        <small>来源: ${article.source.name}</small>
+                        <h3 class="font-bold"><a href="${article.url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${article.title}</a></h3>
+                        <p class="text-sm text-gray-600">${article.description || '暂无描述'}</p>
+                        <small class="text-xs text-gray-400">来源: ${article.source.name}</small>
                     `;
                     gamingNewsContainer.appendChild(newsItem);
                 });
