@@ -1,0 +1,54 @@
+name: Update Content Timestamp
+
+on:
+  workflow_dispatch: # 允许手动触发
+  schedule:
+    # 北京时间 = UTC时间 + 8小时
+    # '0 */1 * * *' 表示每个小时的第0分钟执行一次 (UTC)
+    # 这对应北京时间 08:00, 09:00, ..., 23:00, 00:00, ..., 07:00
+    # 完全满足“北京时间24点至次日7点之间至少更新两次”的要求（实际会更新8次）
+    - cron: '0 */1 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Run update script
+        run: |
+          import datetime
+          from pathlib import Path
+
+          # 获取UTC时间并转换为北京时间
+          now_utc = datetime.datetime.now(datetime.timezone.utc)
+          beijing_time = now_utc + datetime.timedelta(hours=8)
+          timestamp_str = beijing_time.strftime('%Y-%m-%d %H:%M:%S') + ' (北京时间)'
+          
+          # 读取index.html
+          html_path = Path('index.html')
+          content = html_path.read_text(encoding='utf-8')
+          
+          # 替换占位符
+          placeholder = '<!-- LAST_UPDATED_TIMESTAMP -->'
+          new_html_tag = f'<p class="text-xs text-text-auxiliary mt-2">最后更新于: {timestamp_str}</p>'
+          updated_content = content.replace(placeholder, new_html_tag)
+          
+          # 写回文件
+          html_path.write_text(updated_content, encoding='utf-8')
+          print(f"index.html updated with timestamp: {timestamp_str}")
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          # 使用 [skip ci] 避免触发无限循环的工作流
+          git commit -m "Docs: Auto-update content timestamp [skip ci]" || echo "No changes to commit"
+          git push
