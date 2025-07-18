@@ -1,54 +1,64 @@
-name: Update Content Timestamp
+name: Content Auto-Update
 
+# --- 触发条件 ---
 on:
-  workflow_dispatch: # 允许手动触发
+  # 1. 定时执行: 使用CRON表达式，此处设置为“每小时的第0分钟”执行。
   schedule:
-    # 北京时间 = UTC时间 + 8小时
-    # '0 */1 * * *' 表示每个小时的第0分钟执行一次 (UTC)
-    # 这对应北京时间 08:00, 09:00, ..., 23:00, 00:00, ..., 07:00
-    # 完全满足“北京时间24点至次日7点之间至少更新两次”的要求（实际会更新8次）
-    - cron: '0 */1 * * *'
+    - cron: '0 * * * *'
+  # 2. 手动触发: 允许您在GitHub仓库的Actions页面手动启动此工作流。
+  workflow_dispatch:
 
+# --- 作业定义 ---
 jobs:
-  update:
+  update-content:
     runs-on: ubuntu-latest
     steps:
+      # 步骤 1: 检出代码
+      # 拉取您的仓库代码到工作流运行环境中。
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      # 步骤 2: 设置Python环境 (核心修复)
+      # 这是解决 "python: not found" 错误的关键步骤。
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11' # 您可以根据项目需求更改为 '3.9', '3.10' 等版本
+          cache: 'pip' # 缓存pip依赖，加速后续运行
 
-      - name: Run update script
+      # 步骤 3: 安装依赖库 (最佳实践)
+      # 如果您的项目根目录有 requirements.txt 文件，此步骤会自动安装其中定义的库。
+      - name: Install dependencies
         run: |
-          import datetime
-          from pathlib import Path
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            echo 'requirements.txt not found, skipping dependency installation.'
+          fi
 
-          # 获取UTC时间并转换为北京时间
-          now_utc = datetime.datetime.now(datetime.timezone.utc)
-          beijing_time = now_utc + datetime.timedelta(hours=8)
-          timestamp_str = beijing_time.strftime('%Y-%m-%d %H:%M:%S') + ' (北京时间)'
-          
-          # 读取index.html
-          html_path = Path('index.html')
-          content = html_path.read_text(encoding='utf-8')
-          
-          # 替换占位符
-          placeholder = '<!-- LAST_UPDATED_TIMESTAMP -->'
-          new_html_tag = f'<p class="text-xs text-text-auxiliary mt-2">最后更新于: {timestamp_str}</p>'
-          updated_content = content.replace(placeholder, new_html_tag)
-          
-          # 写回文件
-          html_path.write_text(updated_content, encoding='utf-8')
-          print(f"index.html updated with timestamp: {timestamp_str}")
+      # 步骤 4: 执行您的更新脚本
+      # 使用已配置好的Python环境运行脚本。
+      # 我们已根据您的错误日志将脚本路径设置为 './scripts/update_time.py'。
+      - name: Run content update script
+        run: |
+          python ./scripts/update_time.py
+        env:
+          # 如果脚本需要API密钥等敏感信息，请先在仓库的 "Settings > Secrets and variables > Actions" 中配置
+          # 然后在此处引用, 例如:
+          # API_KEY: ${{ secrets.YOUR_API_KEY }}
 
+      # 步骤 5: 提交并推送文件变更 (最佳实践)
+      # 自动将脚本生成或修改的文件提交回仓库。
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add index.html
-          # 使用 [skip ci] 避免触发无限循环的工作流
-          git commit -m "Docs: Auto-update content timestamp [skip ci]" || echo "No changes to commit"
-          git push
+          git add -A # 暂存所有变更
+          # 检查是否有文件变更，只有在有变更时才执行提交和推送
+          if git diff-index --quiet HEAD; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated content update by GitHub Actions"
+            git push
+          fi
