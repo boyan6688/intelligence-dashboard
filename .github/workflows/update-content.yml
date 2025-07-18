@@ -8,7 +8,7 @@ on:
   # 2. 手动触发: 允许您在GitHub仓库的Actions页面手动启动此工作流。
   workflow_dispatch:  
 env:
-  NEWS_API_KEY:957d817000d64a4ba693fd3b8822a282
+  NEWS_API_KEY:  957d817000d64a4ba693fd3b8822a282
 # --- 作业定义 ---
 jobs:
   update-content:
