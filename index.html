@@ -3,23 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>情报仪表盘</title>
-    <!-- 关键修复点 1: 正确引用 CSS 文件 -->
-    <link rel="stylesheet" href="main.css">
+    <title>boyan的全球宏观情报雷达</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-background text-text-main font-ui antialiased">
 
-    <div class="dashboard-container">
-        <h1>最新情报</h1>
-        
-        <!-- 关键修复点 3: 提供JS挂载目标，并设置初始状态 -->
-        <div id="news-container">
-            <p class="loading-message">正在加载新闻...</p>
+    <div class="container mx-auto p-4 md:p-6 lg:p-8">
+        <header class="mb-6 md:mb-8 flex justify-between items-start">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-medium text-text-title">boyan的全球宏观情报雷达</h1>
+                <p class="text-sm text-text-auxiliary mt-1">实时洞察影响市场的关键信号</p>
+                <!-- LAST_UPDATED_TIMESTAMP -->
+            </div>
+            <button id="data-sources-btn" class="bg-container border border-border text-text-main px-4 py-2 rounded-md hover:bg-gray-100 transition-colors shadow-sm flex-shrink-0">
+                数据源
+            </button>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 lg:gap-x-8">
+            
+            <section class="flex flex-col space-y-4">
+                <div class="sticky top-0 bg-background py-4 z-10">
+                    <h2 class="text-xl font-medium text-text-title">中国宏观情报</h2>
+                </div>
+                <div id="china-feed" class="flex flex-col space-y-4">
+                </div>
+            </section>
+
+            <section class="flex flex-col space-y-4">
+                <div class="sticky top-0 bg-background py-4 z-10">
+                    <h2 class="text-xl font-medium text-text-title">国际宏观情报</h2>
+                </div>
+                <div id="international-feed" class="flex flex-col space-y-4">
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <div id="data-sources-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-medium text-text-title">核心数据源清单</h2>
+                <button id="modal-close-btn" class="text-text-auxiliary hover:text-text-title">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div id="modal-body" class="modal-body">
+            </div>
         </div>
     </div>
 
-    <!-- 关键修复点 2: 修正 JS 文件路径并使用 defer 属性 -->
-    <script src="scripts.js" defer></script>
-
+    <script type="module" src="main_script.js"></script>
 </body>
 </html>
